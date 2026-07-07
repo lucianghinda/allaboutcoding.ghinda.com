@@ -1,0 +1,50 @@
+---
+layout: post
+title: 'This week focus: Refactoring'
+date: '2023-06-13 08:04:18 +0000'
+slug: this-week-focus-refactoring
+tags:
+- ruby
+- ruby-on-rails
+- programming-blogs
+- programming-tips
+- refactoring
+description: |-
+  Look at your code and identify any areas where you can improve. Refactoring isn't about fixing bugs but improving your code's readability, efficiency, and maintainability.
+  Look for complex methods that could be broken down, repeated code that could b...
+image: "/assets/images/posts/this-week-focus-refactoring/1b926af4-98d3-40ca-bb91-64e3faf16e17.png"
+last_modified_at: '2023-06-13 08:54:39 +0000'
+---
+
+Look at your code and identify any areas where you can improve. Refactoring isn't about fixing bugs but improving your code's readability, efficiency, and maintainability.
+
+Look for complex methods that could be broken down, repeated code that could be extracted into its method or class, and any design patterns that could be better applied.
+
+But mostly, ask yourself: How much effort will it take a new colleague to understand what this code does?
+
+For inspiration, take a look at these eloquent words from Yukihiro Matz (from Beautiful Code book). I get back to reading that chapter from time to time when I contemplate refactoring and how I write Ruby code:
+
+![A quote from Yukihiro Matz about beautiful code](/assets/images/posts/this-week-focus-refactoring/4a7273fd-a96f-466f-83e2-e6953b9450ad.png)
+
+## Start small
+
+1\. Open a file
+
+1. Identify a method that you think is complex or hard to understand
+    
+2. Make sure you have a test that covers functionally what that piece of code should do (could also be indirect)
+    
+3. Choose one thing that you want to improve: make it smaller or readable or better naming ...
+    
+4. Refactor it
+    
+5. Ask for a review with at least a focus on readability
+    
+
+Of course if you have more time then there are other strategies to approach refactoring. But in case you don't have too much dedicated time, let's focus this week in doing some bit and pieces of refactoring.
+
+---
+
+Enjoyed this article?
+
+Join my [**Short Ruby News**](https://shortruby.com/) **newsletter** for weekly Ruby updates. Also, check out my co-authored **book**, [**LintingRuby**](https://lintingruby.com/), for insights on automated code checks. For more Ruby **learning resources**, visit [**rubyandrails.info**](http://rubyandrails.info)**.**

@@ -1,0 +1,64 @@
+destination: _site
+
+title: All about coding
+tagline: Ruby and Rails technical content written by Lucian Ghinda
+description: Ruby and Rails technical content written by Lucian Ghinda.
+url: https://allaboutcoding.ghinda.com
+baseurl: ""
+lang: en-US
+
+# Root-level article slugs, matching the existing Hashnode URLs (e.g. /how-to-learn-ruby/).
+# GitHub Pages 301-redirects the no-trailing-slash form to this, preserving inbound links.
+permalink: /:title/
+
+excerpt_separator: <!--more-->
+
+# crbelaus/jekyll-tailwind: compile _tailwind.css -> _site/assets/css/styles.css
+# (the <link> in _layouts/default.html points at /assets/css/styles.css)
+tailwind:
+  input: "_tailwind.css"
+  output: "_site/assets/css/styles.css"
+  minify: true
+
+pagination:
+  enabled: true
+  per_page: 10
+  sort_reverse: true
+  trail:
+    before: 3
+    after: 3
+
+tag_page_layout: tag_page
+tag_page_dir: tags
+
+# jekyll-seo-tag configuration
+author: Lucian Ghinda
+logo: /assets/images/home-blog-card.png
+twitter:
+  username: lucianghinda
+  card: summary_large_image
+social:
+  name: Lucian Ghinda
+  links:
+    - https://twitter.com/lucianghinda
+    - https://ruby.social/@lucian
+    - https://github.com/lucianghinda
+    - https://hashnode.com/@lucianghinda
+
+google_site_verification:
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - bin
+  - LICENSE
+  - _tailwind.css
+  - vendor
+  - .bundle

@@ -1,0 +1,6 @@
+{
+  "tabWidth": 1,
+  "useTabs": false,
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "tailwindStylesheet": "./_tailwind.css"
+}

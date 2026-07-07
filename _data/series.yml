@@ -1,0 +1,93 @@
+---
+- slug: rails-action-cable
+  name: Using Action Cable
+  description: This will be a series of articles describing how to use Action Cable.
+    I will focus on creating an API in Rails and consuming it using JS WebSockets
+    with the purpose to explain how they work.
+  posts: []
+- slug: ruby-rails-quick-tips
+  name: Ruby/Rails Tips and TILs
+  description: Short Ruby or Ruby on Rails tips or Today I Learned moments
+  posts:
+  - ruby-using-all-when-the-variable-can-be-an-empty-array
+  - active-record-how-to-select-rows-based-on-the-number-of-items-in-an-array-column-postgresql
+  - how-to-compare-two-arrays-of-hashes-by-value-in-ruby
+  - how-to-update-multiple-different-values-at-the-same-time-in-one-query
+  - how-to-work-with-postgresql-enums-in-rails-7
+  - how-to-get-class-name-and-module-name-in-ruby
+  - alternative-ways-to-freeze-a-string-in-ruby
+  - how-to-skip-all-callbacks-for-all-models-in-rails
+- slug: building-apis
+  name: APIs
+  description: Resources about building (mostly REST) APIs
+  posts: []
+- slug: shorts
+  name: Shorts
+  description: Short thoughts or ideas that you can usually find on my Twitter or
+    Ruby.social profile
+  posts:
+  - bugs-errors-and-causes-from-an-1975-paper
+  - code-design-inertia
+- slug: about-writing
+  name: Writing
+  description: A series of articles where I try to share my insights or perspective
+    about writing technical content
+  posts:
+  - where-to-promote-an-article-about-ruby
+  - a-simple-idea-of-how-to-grow-the-ruby-community
+  - why-write-technical-content-on-a-blog-and-not-only-on-social-media
+- slug: learning-ruby-and-rails
+  name: Learning Ruby and Rails
+  description: |-
+    My recommendations about how to approach the learning of Ruby and Rails.
+    I will focus on Ruby and on Rails but from time to time will also write about other web frameworks.
+  posts:
+  - what-to-work-on-when-learning-a-new-language
+  - resources-to-learn-ruby-on-rails-7
+  - how-to-learn-ruby
+  - projects-ideas-for-learning-ruby-or-any-ruby-web-framework
+  - how-to-create-a-new-rails-app-running-rails-71-beta-or-main-branch
+  - finding-where-a-method-is-defined-in-ruby-using-irb
+  - first-commits-in-a-ruby-on-rails-app
+- slug: ai-code-generation-ruby
+  name: How to use AI/LLM to write Ruby and Rails code
+  description: In this series, I am exploring using AI/LLM/GPT to help me write Ruby
+    code most of the time while implementing a feature in a Ruby on Rails app.
+  posts:
+  - review-ruby-on-rails-code-using-rubymine-ai-and-chatgpt
+  - using-chatgpt-github-copilot-and-phind-to-generate-tailwind-config-for-width-classes
+  - using-gpt-4-to-refactor-a-simple-html-page
+  - using-cursor-ide-for-some-small-changes-in-a-rails-app
+  - a-comparison-of-multiple-generative-ai-tools-when-asking-for-ruby-on-rails-code
+- slug: about-ruby
+  name: About Ruby - exploring Ruby concepts
+  description: ''
+  posts:
+  - about-ruby-a-tale-of-searching-for-the-main
+  - about-ruby-pass-by-value-or-pass-by-reference
+- slug: open-source-ruby
+  name: Open Source Ruby
+  description: In this series I am reviewing open source apps build with Ruby
+  posts:
+  - ruby-open-source-zammad-example
+  - ruby-open-source-chatwoot
+  - ruby-open-source-feedbin
+  - ruby-on-rails-open-source-mastodon
+- slug: modern-ruby
+  name: Modern Ruby
+  description: |-
+    Learn how to use the new Ruby syntax and write beautiful code.
+
+    You will discover the new syntax added from Ruby 2.7 to Ruby 3.3 and practical examples of using them in a Ruby on Rails application.
+  posts:
+  - hash-value-omission-an-introduction-and-some-examples
+  - refactoring-transaction-blocks-with-the-endless-method
+  - endless-method-a-quick-intro
+  - micro-benchmarking-value-objects-in-ruby-datadefine-vs-struct-vs-openstruct
+  - history-of-the-endless-method-syntax
+  - a-recommended-list-of-resources-about-how-ruby-is-evolving
+  - exploring-it-default-block-param-warning-in-ruby-33
+  - an-endless-method-use-case
+  - stay-up-to-date-with-new-ruby-or-rails-features
+  - we-should-adopt-and-use-new-ruby-features
+  - in-defense-of-rubys-short-hand-syntax

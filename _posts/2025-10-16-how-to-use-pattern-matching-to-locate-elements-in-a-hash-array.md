@@ -1,0 +1,144 @@
+---
+layout: post
+title: How to Use Pattern Matching to Locate Elements in a Hash Array
+date: '2025-10-16 04:54:28 +0000'
+slug: how-to-use-pattern-matching-to-locate-elements-in-a-hash-array
+tags:
+- ruby
+- ruby-on-rails
+- patterns
+- matching
+- pattern-matching
+description: Learn how to effectively use Ruby's pattern matching to locate elements
+  within a hash array and handle exceptions
+image: "/assets/images/posts/how-to-use-pattern-matching-to-locate-elements-in-a-hash-array/f53e8f0b-02b1-4df7-8c23-bba12a4d9c0f.png"
+last_modified_at: '2025-11-11 08:29:57 +0000'
+---
+
+Having the following structure of a Hash that includes an Array of Hashes, for example, and you want the email of a moderator:
+
+```ruby
+system = {
+  users: [
+    { username: 'alice', role: 'admin', email: 'alice@example.com' },
+    { username: 'bob', role: 'user', email: 'bob@example.com' },
+    { username: 'charlie', role: 'moderator', email: 'charlie@example.com' }
+  ]
+}
+
+moderator = system[:users].find { |u| u[:role] == 'moderator' }
+email = moderator[:email] 
+
+puts email # charlie@example.com
+```
+
+Now here is doing the same thing in Ruby using pattern matching:
+
+```ruby
+system = {
+  users: [
+    { username: 'alice', role: 'admin', email: 'alice@example.com' },
+    { username: 'bob', role: 'user', email: 'bob@example.com' },
+    { username: 'charlie', role: 'moderator', email: 'charlie@example.com' }
+  ]
+}
+
+system => {users: [*, { role: 'moderator', email: }, *]}
+puts email # charlie@example.com
+```
+
+Let’s put the two lines one above the other:
+
+```ruby
+# Using Enumerator#find
+moderator = system[:users].find { |u| u[:role] == 'moderator' }
+email = moderator[:email] 
+
+# Using Pattern Matching
+system => {users: [*, { role: 'moderator', email: }, *]}
+```
+
+There is another difference between them: in case of Pattern Matching it will throw a `NoMatchingPatternError` when not found, while the two lines that use `Enumerator#find` will throw a `NoMethodError`:
+
+```ruby
+moderator = system[:users].find { |u| u[:role] == 'THIS_ROLE_DOES_NOT_EXISTS' }
+email = moderator[:email] 
+# undefined method '[]' for nil (NoMethodError)
+
+system => {users: [*, { role: 'THIS_ROLE_DOES_NOT_EXISTS', email: }, *]}
+# {users: [{username: "alice", role: "admin", email: "alice@example.com"}, 
+# {username: "bob", role: "user", email: "bob@example.com"}, 
+# {username: "charlie", role: "moderator", email: "charlie@example.com"}]}: 
+# [{username: "alice", role: "admin", email: "alice@example.com"}, 
+# {username: "bob", role: "user", email: "bob@example.com"}, 
+# {username: "charlie", role: "moderator", email: "charlie@example.com"}] 
+# does not match to find pattern (NoMatchingPatternError)does not match 
+# to find pattern (NoMatchingPatternError)
+```
+
+## How does pattern matching work in this example
+
+If `email` does *not exist* either as a variable or method, matching it will create a local variable with the value from the matched row's key.
+
+```ruby
+system = {
+  users: [
+    { username: 'charlie', role: 'moderator', email: 'charlie@example.com' }
+  ]
+}
+system => {users: [*, { role: 'moderator', email: }, *]}
+puts binding.local_variables
+# => [:system, :email]
+```
+
+If a variable of method labeled `email` does exists, it will just try to match it against its value:
+
+```ruby
+system = {
+  users: [
+    { username: 'charlie', role: 'moderator', email: 'charlie@example.com' }
+  ]
+}
+
+email = 'charlie@example.com'
+system => {users: [*, { role: 'moderator', email: }, *]}
+puts email # charlie@example.com
+```
+
+If the variable already has a value, it will be overriden if the matching is succesful:
+
+```ruby
+system = {
+  users: [
+    { username: 'charlie', role: 'moderator', email: 'charlie@example.com' }
+  ]
+}
+email = 'bob@example.com'
+system => {users: [*, { role: 'moderator', email: }, *]}
+puts email # charlie@example.com
+```
+
+You can force if you want to search for the content of that variable with the `^` operator:
+
+```ruby
+system = {
+  users: [
+    { username: 'charlie', role: 'moderator', email: 'charlie@example.com' }
+  ]
+}
+email = 'bob@example.com'
+system => {users: [*, { role: 'moderator', email: ^email}, *]}
+# {users: [{username: "charlie", role: "moderator", email: "charlie@example.com"}]}: [{username: "charlie", role: "moderator", email: "charlie@example.com"}] does not match to find pattern (NoMatchingPatternError)
+```
+
+---
+
+👉 If you like this article and want it in your inbox each week, [subscribe to my newsletter](https://newsletter.lucianghinda.com). You’ll find **ideas on Ruby, software development, software testing, building products and workshops**, plus notes on creativity, tech trends, and whatever else sparks my curiosity.
+
+👐 Want to improve your **developer testing skills**? Visit [goodenoughtesting.com/articles](https://goodenoughtesting.com/articles) to discover resources on testing for developers.
+
+👉 [Join my Short Ruby Newsletter](https://newsletter.shortruby.com) for weekly Ruby updates and visit rubyandrails.info, a directory of Ruby learning content.
+
+🤝 Connect with me on [Linkedin](https://linkedin.com/in/lucianghinda), [Bluesky](https://bsky.app/profile/lucianghinda.com), [Ruby.social](https://ruby.social/@lucian), , and [Twitter](https://x.com/lucianghinda), where I mostly post about Ruby and Ruby on Rails.
+
+🎥 Follow [my YouTube channel](https://www.youtube.com/@shortruby) for short videos about Ruby and Rails.

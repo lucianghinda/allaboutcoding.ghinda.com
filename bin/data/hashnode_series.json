@@ -1,0 +1,454 @@
+[
+  {
+    "id": "61b0d8806a616156e95e1e1a",
+    "name": "Using Action Cable",
+    "slug": "rails-action-cable",
+    "description": {
+      "markdown": "This will be a series of articles describing how to use Action Cable. I will focus on creating an API in Rails and consuming it using JS WebSockets with the purpose to explain how they work."
+    },
+    "posts": {
+      "edges": [],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "50"
+      }
+    }
+  },
+  {
+    "id": "61b372d3b055806a4b00cf62",
+    "name": "Ruby/Rails Tips and TILs",
+    "slug": "ruby-rails-quick-tips",
+    "description": {
+      "markdown": "Short Ruby or Ruby on Rails tips or Today I Learned moments"
+    },
+    "posts": {
+      "edges": [
+        {
+          "node": {
+            "slug": "ruby-using-all-when-the-variable-can-be-an-empty-array",
+            "title": "Ruby: Using .all? when the variable can be an empty array",
+            "publishedAt": "2021-12-10T15:56:05.801Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "active-record-how-to-select-rows-based-on-the-number-of-items-in-an-array-column-postgresql",
+            "title": "Active Record: How to select rows based on the number of items in an array column (PostgreSQL)",
+            "publishedAt": "2021-12-16T04:51:50.478Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "how-to-compare-two-arrays-of-hashes-by-value-in-ruby",
+            "title": "How to compare two arrays of hashes by value in Ruby",
+            "publishedAt": "2022-03-01T14:10:42.000Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "how-to-update-multiple-different-values-at-the-same-time-in-one-query",
+            "title": "How to update multiple different values at the same time in one query",
+            "publishedAt": "2022-04-01T06:27:48.506Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "how-to-work-with-postgresql-enums-in-rails-7",
+            "title": "How to work with PostgreSQL enums in Rails 7",
+            "publishedAt": "2022-09-21T07:22:44.351Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "how-to-get-class-name-and-module-name-in-ruby",
+            "title": "How to get class name and module name in Ruby",
+            "publishedAt": "2022-10-06T04:07:03.319Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "alternative-ways-to-freeze-a-string-in-ruby",
+            "title": "Alternative ways to freeze a string in Ruby",
+            "publishedAt": "2022-10-13T02:56:26.737Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "how-to-skip-all-callbacks-for-all-models-in-rails",
+            "title": "How to skip all callbacks for all models in Rails",
+            "publishedAt": "2023-10-25T03:37:40.109Z"
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "50"
+      }
+    }
+  },
+  {
+    "id": "62d04bb36b0f8eeb0e0671eb",
+    "name": "APIs",
+    "slug": "building-apis",
+    "description": {
+      "markdown": "Resources about building (mostly REST) APIs"
+    },
+    "posts": {
+      "edges": [],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "50"
+      }
+    }
+  },
+  {
+    "id": "63bfc994a54681f9eea76271",
+    "name": "Shorts",
+    "slug": "shorts",
+    "description": {
+      "markdown": "Short thoughts or ideas that you can usually find on my Twitter or Ruby.social profile"
+    },
+    "posts": {
+      "edges": [
+        {
+          "node": {
+            "slug": "bugs-errors-and-causes-from-an-1975-paper",
+            "title": "Bugs, errors and causes from an 1975 paper",
+            "publishedAt": "2023-08-11T02:41:12.845Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "code-design-inertia",
+            "title": "Code Design Inertia",
+            "publishedAt": "2023-01-12T08:49:50.290Z"
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "50"
+      }
+    }
+  },
+  {
+    "id": "64b76ff755c92dbf08a7c962",
+    "name": "Writing",
+    "slug": "about-writing",
+    "description": {
+      "markdown": "A series of articles where I try to share my insights or perspective about writing technical content"
+    },
+    "posts": {
+      "edges": [
+        {
+          "node": {
+            "slug": "where-to-promote-an-article-about-ruby",
+            "title": "Where to promote an article about Ruby",
+            "publishedAt": "2023-07-19T03:26:40.233Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "a-simple-idea-of-how-to-grow-the-ruby-community",
+            "title": "A simple idea of how to grow the Ruby community",
+            "publishedAt": "2023-06-15T11:11:26.826Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "why-write-technical-content-on-a-blog-and-not-only-on-social-media",
+            "title": "Why write technical content on a blog and not only on social media",
+            "publishedAt": "2023-06-14T07:44:59.361Z"
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "50"
+      }
+    }
+  },
+  {
+    "id": "64c2172892c1493ce06e658c",
+    "name": "Learning Ruby and Rails",
+    "slug": "learning-ruby-and-rails",
+    "description": {
+      "markdown": "My recommendations about how to approach the learning of Ruby and Rails.\nI will focus on Ruby and on Rails but from time to time will also write about other web frameworks."
+    },
+    "posts": {
+      "edges": [
+        {
+          "node": {
+            "slug": "what-to-work-on-when-learning-a-new-language",
+            "title": "What to work on when learning a new language",
+            "publishedAt": "2022-04-26T04:07:59.925Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "resources-to-learn-ruby-on-rails-7",
+            "title": "Resources to learn Ruby on Rails 7",
+            "publishedAt": "2022-04-29T03:38:29.513Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "how-to-learn-ruby",
+            "title": "How to learn Ruby",
+            "publishedAt": "2022-09-02T07:03:33.726Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "projects-ideas-for-learning-ruby-or-any-ruby-web-framework",
+            "title": "Projects ideas for learning Ruby or any Ruby web framework",
+            "publishedAt": "2023-08-02T08:42:29.389Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "how-to-create-a-new-rails-app-running-rails-71-beta-or-main-branch",
+            "title": "How to create a new Rails app running Rails 7.1 beta or main branch",
+            "publishedAt": "2023-09-15T10:08:55.412Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "finding-where-a-method-is-defined-in-ruby-using-irb",
+            "title": "Finding where a method is defined in Ruby using IRB",
+            "publishedAt": "2024-01-11T09:21:18.971Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "first-commits-in-a-ruby-on-rails-app",
+            "title": "First commits in a Ruby on Rails app",
+            "publishedAt": "2024-01-17T10:45:25.473Z"
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "50"
+      }
+    }
+  },
+  {
+    "id": "64fb46b7d97346b470a1d1aa",
+    "name": "How to use AI/LLM to write Ruby and Rails code",
+    "slug": "ai-code-generation-ruby",
+    "description": {
+      "markdown": "In this series, I am exploring using AI/LLM/GPT to help me write Ruby code most of the time while implementing a feature in a Ruby on Rails app. "
+    },
+    "posts": {
+      "edges": [
+        {
+          "node": {
+            "slug": "review-ruby-on-rails-code-using-rubymine-ai-and-chatgpt",
+            "title": "Review Ruby on Rails Code using Rubymine AI and ChatGPT",
+            "publishedAt": "2023-12-01T06:37:50.400Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "using-chatgpt-github-copilot-and-phind-to-generate-tailwind-config-for-width-classes",
+            "title": "Using ChatGPT, Github Copilot and Phind to generate Tailwind config for width classes",
+            "publishedAt": "2023-10-20T11:00:07.467Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "using-gpt-4-to-refactor-a-simple-html-page",
+            "title": "Using GPT-4 to refactor a simple HTML page",
+            "publishedAt": "2023-09-13T03:10:33.904Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "using-cursor-ide-for-some-small-changes-in-a-rails-app",
+            "title": "Using Cursor IDE for some small changes in a Rails app",
+            "publishedAt": "2023-09-08T16:09:22.438Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "a-comparison-of-multiple-generative-ai-tools-when-asking-for-ruby-on-rails-code",
+            "title": "A comparison of multiple generative AI tools when asking for Ruby on Rails code",
+            "publishedAt": "2023-07-05T12:05:02.169Z"
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "50"
+      }
+    }
+  },
+  {
+    "id": "652f4e06e1014c2f159eac4a",
+    "name": "About Ruby - exploring Ruby concepts",
+    "slug": "about-ruby",
+    "description": {
+      "markdown": ""
+    },
+    "posts": {
+      "edges": [
+        {
+          "node": {
+            "slug": "about-ruby-a-tale-of-searching-for-the-main",
+            "title": "About Ruby: A tale of searching for the main",
+            "publishedAt": "2023-10-18T03:14:12.565Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "about-ruby-pass-by-value-or-pass-by-reference",
+            "title": "About Ruby: pass by value or pass by reference?",
+            "publishedAt": "2023-07-12T03:36:19.971Z"
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "50"
+      }
+    }
+  },
+  {
+    "id": "654b106791ec4bf2c5deb7d2",
+    "name": "Open Source Ruby",
+    "slug": "open-source-ruby",
+    "description": {
+      "markdown": "In this series I am reviewing open source apps build with Ruby"
+    },
+    "posts": {
+      "edges": [
+        {
+          "node": {
+            "slug": "ruby-open-source-zammad-example",
+            "title": "Ruby Open Source: Zammad example",
+            "publishedAt": "2023-11-03T03:52:55.738Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "ruby-open-source-chatwoot",
+            "title": "Ruby Open Source: chatwoot",
+            "publishedAt": "2023-11-10T06:51:20.509Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "ruby-open-source-feedbin",
+            "title": "Ruby open source: feedbin",
+            "publishedAt": "2023-11-17T08:57:56.447Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "ruby-on-rails-open-source-mastodon",
+            "title": "Ruby on Rails Open Source: Mastodon",
+            "publishedAt": "2023-12-08T06:47:47.106Z"
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "50"
+      }
+    }
+  },
+  {
+    "id": "65fd835ca87f4f8d2b1c54d6",
+    "name": "Modern Ruby",
+    "slug": "modern-ruby",
+    "description": {
+      "markdown": "Learn how to use the new Ruby syntax and write beautiful code.\n\nYou will discover the new syntax added from Ruby 2.7 to Ruby 3.3 and practical examples of using them in a Ruby on Rails application."
+    },
+    "posts": {
+      "edges": [
+        {
+          "node": {
+            "slug": "hash-value-omission-an-introduction-and-some-examples",
+            "title": "Hash value omission - an introduction and some examples",
+            "publishedAt": "2024-07-24T07:16:14.461Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "refactoring-transaction-blocks-with-the-endless-method",
+            "title": "Refactoring transaction blocks with the endless method",
+            "publishedAt": "2024-06-20T06:49:09.883Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "endless-method-a-quick-intro",
+            "title": "Endless method - a quick intro",
+            "publishedAt": "2024-06-05T16:30:25.193Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "micro-benchmarking-value-objects-in-ruby-datadefine-vs-struct-vs-openstruct",
+            "title": "Micro benchmarking value objects in Ruby: Data.define vs Struct vs OpenStruct",
+            "publishedAt": "2024-03-22T08:27:41.599Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "history-of-the-endless-method-syntax",
+            "title": "History of the endless method syntax",
+            "publishedAt": "2024-03-19T07:37:03.944Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "a-recommended-list-of-resources-about-how-ruby-is-evolving",
+            "title": "A recommended list of resources about how Ruby is evolving",
+            "publishedAt": "2023-12-21T10:15:43.119Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "exploring-it-default-block-param-warning-in-ruby-33",
+            "title": "Exploring `it` default block param warning in Ruby 3.3",
+            "publishedAt": "2023-12-14T07:33:32.986Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "an-endless-method-use-case",
+            "title": "An Endless Method Use Case",
+            "publishedAt": "2023-12-06T07:18:25.011Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "stay-up-to-date-with-new-ruby-or-rails-features",
+            "title": "Stay up to date with new Ruby or Rails features",
+            "publishedAt": "2023-05-31T08:26:39.258Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "we-should-adopt-and-use-new-ruby-features",
+            "title": "We should adopt and use new Ruby features",
+            "publishedAt": "2023-02-03T14:25:20.476Z"
+          }
+        },
+        {
+          "node": {
+            "slug": "in-defense-of-rubys-short-hand-syntax",
+            "title": "In defense of Ruby's short-hand syntax",
+            "publishedAt": "2023-01-18T10:01:14.458Z"
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "50"
+      }
+    }
+  }
+]
