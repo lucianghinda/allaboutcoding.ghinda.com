@@ -2,9 +2,10 @@
 bin/.hashnode_token
 .env
 
-# Unpublished drafts — kept locally, not committed (would be public if the repo is).
-# Un-ignore these two lines if your GitHub repo is private and you want drafts in git.
-_drafts/
+# Drafts (_drafts/) ARE committed: Jekyll doesn't render them without --drafts,
+# so they stay off the website but are versioned in this (public) repo.
+
+# Hashnode tooling draft dump — kept local, not committed.
 bin/data/hashnode_drafts.json
 
 # Jekyll build output & caches
