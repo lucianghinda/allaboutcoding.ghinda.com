@@ -12,6 +12,13 @@
 html { color-scheme: light; }
 html.dark { color-scheme: dark; }
 
+/* Preflight caps img/video at max-width:100% but not iframe. Embeds with a
+   fixed width="…" (e.g. the newsletter iframe) would otherwise force
+   horizontal scroll on narrow screens. */
+@layer base {
+  iframe { max-width: 100%; }
+}
+
 /* Main text font: Atkinson Hyperlegible (proportional, high-legibility) */
 
 /* atkinson-hyperlegible-latin-400-normal */
