@@ -1,6 +1,13 @@
+The MIT License below covers only the SOURCE CODE of this repository —
+Jekyll templates, stylesheets, configuration, and the scripts in bin/.
+It does NOT cover the written content: the articles in _posts/, _drafts/,
+and series/ are "All Rights Reserved" — see CONTENT-LICENSE.md.
+
+--------------------------------------------------------------------------
+
 MIT License
 
-Copyright (c) 2026 Lucian Ghinda 
+Copyright (c) 2026 Lucian Ghinda
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

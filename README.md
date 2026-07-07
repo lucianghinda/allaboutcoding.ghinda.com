@@ -75,3 +75,26 @@ Pages settings first (closes the takeover window) → lower DNS TTL → point th
 `allaboutcoding` CNAME at `<user>.github.io` → wait for the TLS cert → enforce
 HTTPS → re-check every sitemap URL live → only then unpublish Hashnode.
 Keep `../backup-articles` and `bin/data/` forever.
+
+## License & Credits
+
+This repository is licensed in two parts:
+
+- **Source code** (Jekyll templates, stylesheets, configuration, `bin/`
+  scripts) — [MIT License](LICENSE). Reuse it freely.
+- **Written content** (articles in `_posts/`, `_drafts/`, `series/`) —
+  © 2021–2026 Lucian Ghinda, **All Rights Reserved**
+  ([CONTENT-LICENSE.md](CONTENT-LICENSE.md)). Please don't republish,
+  translate, or sell the articles without permission; short quotes with a
+  link back are welcome.
+
+### Third-party credits
+
+- **Fonts:** [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/)
+  and Atkinson Hyperlegible Mono by the Braille Institute of America, under the
+  [SIL Open Font License 1.1](https://openfontlicense.org/). Loaded from the
+  jsDelivr CDN via [Fontsource](https://fontsource.org/).
+- **Syntax highlighting:** colors based on the base16 "Eighties" scheme by
+  [Chris Kempson](https://github.com/chriskempson/base16) (MIT).
+- Built with [Jekyll](https://jekyllrb.com/) and
+  [Tailwind CSS](https://tailwindcss.com/); see `Gemfile` for plugins.
