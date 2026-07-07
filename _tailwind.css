@@ -12,50 +12,85 @@
 html { color-scheme: light; }
 html.dark { color-scheme: dark; }
 
-/* ia-writer-mono-latin-400-normal */
+/* Main text font: Atkinson Hyperlegible (proportional, high-legibility) */
+
+/* atkinson-hyperlegible-latin-400-normal */
 @font-face {
-  font-family: "iA Writer Mono";
+  font-family: "Atkinson Hyperlegible";
   font-style: normal;
   font-display: swap;
   font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-normal.woff2) format("woff2"),
-       url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-normal.woff) format("woff");
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/atkinson-hyperlegible@latest/latin-400-normal.woff2) format("woff2"),
+       url(https://cdn.jsdelivr.net/fontsource/fonts/atkinson-hyperlegible@latest/latin-400-normal.woff) format("woff");
 }
 
-/* ia-writer-mono-latin-700-normal */
+/* atkinson-hyperlegible-latin-700-normal */
 @font-face {
-  font-family: "iA Writer Mono";
+  font-family: "Atkinson Hyperlegible";
   font-style: normal;
   font-display: swap;
   font-weight: 700;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-normal.woff2) format("woff2"),
-       url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-normal.woff) format("woff");
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/atkinson-hyperlegible@latest/latin-700-normal.woff2) format("woff2"),
+       url(https://cdn.jsdelivr.net/fontsource/fonts/atkinson-hyperlegible@latest/latin-700-normal.woff) format("woff");
 }
 
-/* ia-writer-mono-latin-400-italic */
+/* atkinson-hyperlegible-latin-400-italic */
 @font-face {
-  font-family: "iA Writer Mono";
+  font-family: "Atkinson Hyperlegible";
   font-style: italic;
   font-display: swap;
   font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff2) format("woff2"),
-       url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff) format("woff");
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/atkinson-hyperlegible@latest/latin-400-italic.woff2) format("woff2"),
+       url(https://cdn.jsdelivr.net/fontsource/fonts/atkinson-hyperlegible@latest/latin-400-italic.woff) format("woff");
 }
 
-/* ia-writer-mono-latin-700-italic */
+/* atkinson-hyperlegible-latin-700-italic */
 @font-face {
-  font-family: "iA Writer Mono";
+  font-family: "Atkinson Hyperlegible";
   font-style: italic;
   font-display: swap;
   font-weight: 700;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-italic.woff2) format("woff2"),
-       url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-italic.woff) format("woff");
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/atkinson-hyperlegible@latest/latin-700-italic.woff2) format("woff2"),
+       url(https://cdn.jsdelivr.net/fontsource/fonts/atkinson-hyperlegible@latest/latin-700-italic.woff) format("woff");
+}
+
+/* Code font: Atkinson Hyperlegible Mono (fixed-width companion) */
+
+/* atkinson-hyperlegible-mono-latin-400-normal */
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/atkinson-hyperlegible-mono@latest/latin-400-normal.woff2) format("woff2"),
+       url(https://cdn.jsdelivr.net/fontsource/fonts/atkinson-hyperlegible-mono@latest/latin-400-normal.woff) format("woff");
+}
+
+/* atkinson-hyperlegible-mono-latin-700-normal */
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/atkinson-hyperlegible-mono@latest/latin-700-normal.woff2) format("woff2"),
+       url(https://cdn.jsdelivr.net/fontsource/fonts/atkinson-hyperlegible-mono@latest/latin-700-normal.woff) format("woff");
+}
+
+/* atkinson-hyperlegible-mono-latin-400-italic */
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/atkinson-hyperlegible-mono@latest/latin-400-italic.woff2) format("woff2"),
+       url(https://cdn.jsdelivr.net/fontsource/fonts/atkinson-hyperlegible-mono@latest/latin-400-italic.woff) format("woff");
 }
 
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-mono: 'iA Writer Mono', sans-serif;
+  --font-sans: 'Atkinson Hyperlegible', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Atkinson Hyperlegible Mono', ui-monospace, monospace;
 
   /* Typography customization */
   --prose-body: var(--color-gray-600);
@@ -171,6 +206,14 @@ html.dark { color-scheme: dark; }
   & code {
     background-color: color-mix(in srgb, var(--color-gray-800) 20%, transparent);
     padding: 0.1rem 0.2rem;
+  }
+
+  /* Inline-code styling must not apply inside code blocks: the <pre> already
+     has its own background, so a per-line <code> background just layers boxes
+     on top of each line. Reset it there. */
+  & pre code {
+    background-color: transparent;
+    padding: 0;
   }
 
   & strong {
