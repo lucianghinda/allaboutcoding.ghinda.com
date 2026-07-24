@@ -64,9 +64,9 @@ My personal rule: try 3-4 prompt iterations with an agent before switching to ma
 
 What types of work does this approach NOT work for? So far I found it struggles with deep architectural decisions that need sustained context across multiple sessions.
 
-What is the cost vs time trade-off? Running 4+ agents in parallel plus multi-panel reviews has real API costs. I am tracking this now to see if the speed gain justifies the expense.
+What is the cost vs time trade-off? Running 4+ agents in parallel plus multi-panel reviews has real API costs. Will write more about this part as it is important to keep in mind. 
 
-How does this scale to teams? This workflow is optimized for solo or very small teams. Coordinating multiple developers all running competing agents could create merge chaos.
+How does this scale to teams? This workflow is optimized for solo or very small teams. Coordinating multiple developers all running competing agents will need a different structure probably.  
 
 The comment and abstraction problems reveal something deeper: LLMs optimize for explicitness and abstraction while human maintainers want conciseness and clarity. This tension might be fundamental, not something we can prompt away with ease.
 
