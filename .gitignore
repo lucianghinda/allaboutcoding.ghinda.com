@@ -21,3 +21,4 @@ vendor/bundle/
 # OS / editor
 .DS_Store
 *.swp
+.gstack/
