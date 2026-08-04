@@ -73,6 +73,16 @@ html.dark { color-scheme: dark; }
        url(https://cdn.jsdelivr.net/fontsource/fonts/atkinson-hyperlegible-mono@latest/latin-400-normal.woff) format("woff");
 }
 
+/* atkinson-hyperlegible-mono-latin-600-normal */
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/atkinson-hyperlegible-mono@latest/latin-600-normal.woff2) format("woff2"),
+       url(https://cdn.jsdelivr.net/fontsource/fonts/atkinson-hyperlegible-mono@latest/latin-600-normal.woff) format("woff");
+}
+
 /* atkinson-hyperlegible-mono-latin-700-normal */
 @font-face {
   font-family: "Atkinson Hyperlegible Mono";
@@ -227,8 +237,12 @@ html.dark { color-scheme: dark; }
     font-weight: bold;
   }
 
+  /* Typography ships `pre` at weight 400 while inline `code` is 600. Bump
+     blocks to match, so code reads at one weight everywhere. `pre code`
+     inherits its weight, so setting it here is enough. */
   & pre {
     border-radius: 0;
+    font-weight: 600;
   }
 
   & li {
