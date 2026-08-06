@@ -218,8 +218,6 @@ For cleanup there is `opencode session delete <id>` and `opencode export --sanit
 
 I find the idea to use SQLite for this great as it is a DB, it is local and fast and it can be queries like a DB instead of traversing the file system and grepping files. 
 
----
-
 ## 6. pi: the only one that publishes its file format
 
 pi is the smallest tool (but with a lot of addons) in this list and the best documented one. It publishes the path, the deletion flow, **and** the complete on-disk format, in the repo and at [pi.dev/docs](https://pi.dev/docs).
@@ -250,8 +248,6 @@ Relocation is documented at three levels: `PI_CODING_AGENT_DIR` for the whole di
 pi's `/share` is also the odd one out in a good way. There is no vendor server. It exports the session to HTML and uploads it as a **secret GitHub gist** in your own account, viewable at `https://pi.dev/session/#<gist-id>`.
 
 ![pi documents its full session file format, a JSONL tree linked by id and parentId](/assets/images/posts/llms-session-storage/screenshot-pi-session-tree.png)
-
----
 
 ## Five things I take away from this
 
