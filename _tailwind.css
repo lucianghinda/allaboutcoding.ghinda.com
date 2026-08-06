@@ -250,12 +250,24 @@ html.dark { color-scheme: dark; }
   }
 
   & blockquote {
-    font-size: 1.1rem;
-    margin: 1rem 0;
-    padding: 0.5rem;
-    padding-left: 1rem;
-    border: 1px solid #3d3d3d;
+    margin: 2rem 0;
+    padding: 1.25rem 1.5rem;
+    border: 0;
+    border-inline-start: 0.25rem solid var(--color-amber-500);
+    background-color: color-mix(in srgb, var(--color-amber-500) 7%, transparent);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
     quotes: none;
+  }
+
+  & blockquote p:first-child {
+    margin-top: 0;
+  }
+
+  & blockquote p:last-child {
+    margin-bottom: 0;
   }
 
   /* Tables */
