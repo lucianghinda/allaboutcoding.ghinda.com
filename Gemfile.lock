@@ -96,6 +96,9 @@ GEM
     jekyll-tailwind (2.1)
       jekyll (>= 3.0, < 5.0)
       tailwindcss-ruby
+    jekyll-toc (0.19.0)
+      jekyll (>= 3.9)
+      nokogiri (~> 1.12)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     jemoji (0.13.0)
@@ -200,6 +203,7 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-tagging
   jekyll-tailwind (~> 2.0)
+  jekyll-toc
   jemoji
   tailwindcss-ruby (~> 4.0)
   tzinfo (~> 1.2)
@@ -247,6 +251,7 @@ CHECKSUMS
   jekyll-sitemap (1.4.0) sha256=0de08c5debc185ea5a8f980e1025c7cd3f8e0c35c8b6ef592f15c46235cf4218
   jekyll-tagging (1.1.0) sha256=24cab3d0f9920381028597667b1ea977479d95cffe271e64f4c394e64b4a09e3
   jekyll-tailwind (2.1) sha256=d1ae0a064362ab6f12a474e3b1840e6829c11c66794fd22a33193569b4eb32fb
+  jekyll-toc (0.19.0) sha256=8a8270f7e8e3d849e2035710b1713d0af5e2185a4bfaca70f9192ecf5ac50668
   jekyll-watch (2.2.1) sha256=bc44ed43f5e0a552836245a54dbff3ea7421ecc2856707e8a1ee203a8387a7e1
   jemoji (0.13.0) sha256=5d4c3e8e2cbbb2b73997c31294f6f70c94e4d4fade039373e86835bcf5529e7c
   json (2.20.0) sha256=9362bc6e55a952b056abf9167cf053358181c904cb70cd6eee0808ea830fc32b

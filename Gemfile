@@ -15,6 +15,7 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-paginate-v2"
   gem "jekyll-tagging"
+  gem "jekyll-toc"                  # toshimaru/jekyll-toc: per-post TOC, enabled with `toc: true` front matter
 end
 
 # Selects Tailwind v4 for jekyll-tailwind (bundles the standalone CLI binary)
