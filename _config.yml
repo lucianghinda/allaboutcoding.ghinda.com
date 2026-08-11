@@ -39,6 +39,7 @@ tag_page_dir: tags
 toc:
   min_level: 2
   max_level: 2
+  ordered_list: true
 
 # jekyll-seo-tag configuration
 author: Lucian Ghinda
