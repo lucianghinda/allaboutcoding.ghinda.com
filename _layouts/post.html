@@ -23,6 +23,21 @@ layout: default
   </p>
   {% endif %}
 
+  {% if page.toc %}
+    <nav aria-labelledby="toc-heading"
+      class="mt-6 rounded-md border border-stone-300 bg-stone-50 p-5 text-sm dark:border-stone-600 dark:bg-neutral-900/40
+             [&_ul]:m-0 [&_ul]:list-none [&_ul]:p-0
+             [&_li]:my-2
+             [&_ul_ul]:mt-2 [&_ul_ul]:border-l [&_ul_ul]:border-stone-300 [&_ul_ul]:pl-4 [&_ul_ul]:dark:border-stone-600
+             [&_a]:text-stone-700 [&_a]:no-underline [&_a]:transition-colors hover:[&_a]:text-amber-600
+             [&_a]:dark:text-stone-300 dark:hover:[&_a]:text-amber-400">
+      <h2 id="toc-heading" class="mb-3 text-xs font-semibold uppercase tracking-wider text-stone-500 dark:text-stone-400">
+        Table of contents
+      </h2>
+      {{ content | toc_only }}
+    </nav>
+  {% endif %}
+
   <div class="mt-4 prose font-extralight dark:prose-invert">{{ content }}</div>
 </section>
 

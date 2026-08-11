@@ -31,6 +31,15 @@ pagination:
 tag_page_layout: tag_page
 tag_page_dir: tags
 
+# toshimaru/jekyll-toc. Opt-in per post with `toc: true` in the front matter.
+# h2 only: the post title is already the page's single h1, and listing h3
+# subsections made the TOC as long as an outline instead of a quick map.
+# Styling lives in _layouts/post.html, not here — Tailwind scans source files
+# for class names and would not see classes emitted from this config.
+toc:
+  min_level: 2
+  max_level: 2
+
 # jekyll-seo-tag configuration
 author: Lucian Ghinda
 logo: /assets/images/home-blog-card.png
