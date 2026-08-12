@@ -16,6 +16,7 @@ group :jekyll_plugins do
   gem "jekyll-paginate-v2"
   gem "jekyll-tagging"
   gem "jekyll-toc"                  # toshimaru/jekyll-toc: per-post TOC, enabled with `toc: true` front matter
+  gem "jekyll-redirect-from"        # jekyll/jekyll-redirect-from: `redirect_from:` front matter for old/wrong URLs
 end
 
 # Selects Tailwind v4 for jekyll-tailwind (bundles the standalone CLI binary)
