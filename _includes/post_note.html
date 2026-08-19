@@ -4,17 +4,20 @@
   the label with `note_title:`.
 
   Rendered inside the .prose wrapper so links and inline code keep the
-  article's styling; only the size and the color are toned down. The size
-  overrides are scoped to the inner div: `[&_p]:text-sm` outranks a plain
-  `text-xs` on the label (class+element beats class), so the label must sit
-  outside that scope.
+  article's styling; only the size and the color are toned down.
+
+  Two specificity notes, both about `.prose p` being class+element (0,1,1):
+  - the label is a <div>, not a <p>. Prose has no rule for divs, so a plain
+    `text-sm` applies. As a <p> it would lose to `.prose p` and render at 1.1rem.
+  - the note body keeps its overrides on the wrapper (`[&_p]:text-sm`), which
+    compiles to the same specificity and wins on source order.
 {% endcomment %}
 {% if page.note %}
-  <aside aria-label="{{ page.note_title | default: 'How this article was written' }}"
+  <aside aria-labelledby="post-note-title"
     class="mt-10 border-t border-stone-300 pt-4 text-stone-500 dark:border-stone-600 dark:text-stone-400">
-    <p class="mb-1.5 text-xs font-semibold uppercase tracking-wider text-stone-400 dark:text-stone-500">
+    <div id="post-note-title" class="mb-1.5 text-sm font-semibold">
       {{ page.note_title | default: "How this article was written" }}
-    </p>
+    </div>
     <div class="[&_p]:my-0 [&_p]:text-sm [&_p]:leading-relaxed [&_p+p]:mt-3 [&_a]:text-inherit">
       {{ page.note | markdownify }}
     </div>
