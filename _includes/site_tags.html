@@ -1,7 +1,64 @@
-<h3 class="mt-4 text-center text-xl text-stone-500 dark:text-stone-300">View posts by tag</h3>
+{% comment %}
+  Site-wide tag index. Shown at the bottom of the home page only.
 
-<div class="mt-4 flex flex-wrap justify-center gap-5 ">
-  {% for tag in site.tags %}
-    {% include tag.html tag=tag.first %}
-  {% endfor %}
-</div>
+  There are ~120 tags across ~110 posts and two thirds of them have a single
+  post, so listing all of them buried the handful people actually browse. The
+  most-used tags are shown first with their post counts; the long tail sits
+  behind a toggle, alphabetically.
+
+  Liquid cannot sort a hash by its values, so each tag is folded into a
+  zero-padded string ("092|ruby") that sorts lexicographically by count, then
+  split back apart. Padding to 3 digits caps this at 999 posts per tag.
+{% endcomment %}
+
+{% assign top_tags_shown = 12 %}
+
+{%- capture tag_entries -%}
+  {%- for tag in site.tags -%}{{ tag[1].size | prepend: "000" | slice: -3, 3 }}|{{ tag[0] }},{%- endfor -%}
+{%- endcapture -%}
+{%- assign ranked_tags = tag_entries | split: "," | sort | reverse -%}
+
+{%- comment -%} Delimited list of the shown names, so the toggle can skip them. {%- endcomment -%}
+{%- capture top_tag_names -%}
+  {%- for entry in ranked_tags limit: top_tags_shown -%}|{{ entry | split: "|" | last }}{%- endfor -%}|
+{%- endcapture -%}
+
+<section aria-labelledby="site-tags-heading" class="mt-12 border-t border-stone-300 pt-6 dark:border-stone-600">
+  <h2 id="site-tags-heading" class="text-center text-xl text-stone-500 dark:text-stone-300">
+    Explore by tag
+  </h2>
+
+  <div class="mt-4 flex flex-wrap items-baseline justify-center gap-x-4 gap-y-2">
+    {%- for entry in ranked_tags limit: top_tags_shown %}
+      {%- assign parts = entry | split: "|" -%}
+      {%- assign tag_name = parts[1] -%}
+      {%- assign tag_count = parts[0] | times: 1 -%}
+      {% include tag.html tag=tag_name count=tag_count %}
+    {%- endfor %}
+  </div>
+
+  <details class="group mt-5">
+    <summary
+      class="mx-auto flex w-fit cursor-pointer list-none items-center gap-2 py-1 text-sm text-stone-500
+             transition-colors hover:text-amber-600 dark:text-stone-400 dark:hover:text-amber-400
+             [&::-webkit-details-marker]:hidden">
+      <svg class="size-3 shrink-0 transition-transform duration-200 group-open:rotate-90"
+        fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+      <span class="group-open:hidden">show all {{ site.tags.size }} tags</span>
+      <span class="hidden group-open:inline">hide the full list</span>
+    </summary>
+
+    <div class="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-2">
+      {%- assign all_tags = site.tags | sort -%}
+      {%- for tag in all_tags %}
+        {%- assign tag_name = tag[0] -%}
+        {%- capture needle %}|{{ tag_name }}|{% endcapture -%}
+        {%- unless top_tag_names contains needle %}
+      {% include tag.html tag=tag_name %}
+        {%- endunless -%}
+      {%- endfor %}
+    </div>
+  </details>
+</section>

@@ -1,2 +1,15 @@
-<a href="/tags/{{ include.tag }}"
-   class="inline-block text-sm text-stone-500 dark:text-stone-400 underline decoration-1 underline-offset-2 decoration-stone-300 dark:decoration-stone-600 hover:text-stone-700 dark:hover:text-stone-200 hover:decoration-amber-500 no-prose">#{{ include.tag }}</a>
+{% comment %}
+  One tag link. Pass `count` to show the number of posts next to it (the
+  site-wide list on the home page does; a post's own tags do not).
+
+  The count sits outside the <a> on purpose: text-decoration painted by the
+  link runs across every inline descendant, so a number inside it would be
+  underlined too.
+{% endcomment %}
+<span class="inline-flex items-baseline gap-1">
+  <a href="/tags/{{ include.tag }}"
+     class="text-sm text-stone-500 dark:text-stone-400 underline decoration-1 underline-offset-2 decoration-stone-300 dark:decoration-stone-600 hover:text-stone-700 dark:hover:text-stone-200 hover:decoration-amber-500 no-prose">#{{ include.tag }}</a>
+  {%- if include.count %}
+  <span class="text-xs tabular-nums text-stone-500 dark:text-stone-400">{{ include.count }}</span>
+  {%- endif %}
+</span>
