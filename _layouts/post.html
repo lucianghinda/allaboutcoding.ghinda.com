@@ -48,7 +48,10 @@ layout: default
     </nav>
   {% endif %}
 
-  <div class="mt-4 prose font-extralight dark:prose-invert">{{ content }}</div>
+  <div class="mt-4 prose font-extralight dark:prose-invert">
+    {{ content }}
+    {% include post_note.html %}
+  </div>
 </section>
 
 {% include site_tags.html %}

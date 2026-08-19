@@ -1,0 +1,22 @@
+{% comment %}
+  End-of-article note (colophon): how the article was written, tooling and AI
+  disclosures. Opt in per post with `note:` in the front matter, and override
+  the label with `note_title:`.
+
+  Rendered inside the .prose wrapper so links and inline code keep the
+  article's styling; only the size and the color are toned down. The size
+  overrides are scoped to the inner div: `[&_p]:text-sm` outranks a plain
+  `text-xs` on the label (class+element beats class), so the label must sit
+  outside that scope.
+{% endcomment %}
+{% if page.note %}
+  <aside aria-label="{{ page.note_title | default: 'How this article was written' }}"
+    class="mt-10 border-t border-stone-300 pt-4 text-stone-500 dark:border-stone-600 dark:text-stone-400">
+    <p class="mb-1.5 text-xs font-semibold uppercase tracking-wider text-stone-400 dark:text-stone-500">
+      {{ page.note_title | default: "How this article was written" }}
+    </p>
+    <div class="[&_p]:my-0 [&_p]:text-sm [&_p]:leading-relaxed [&_p+p]:mt-3 [&_a]:text-inherit">
+      {{ page.note | markdownify }}
+    </div>
+  </aside>
+{% endif %}
