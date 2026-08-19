@@ -17,6 +17,14 @@
   </script>
   {% seo %}
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/rss.xml' | absolute_url }}">
+  {% comment %}
+    jekyll-agent-markdown sets page.agent_markdown_url on every exported post,
+    pointing at the raw .md sibling. Agents and readers that prefer source over
+    rendered HTML can follow this instead of scraping the page.
+  {% endcomment %}
+  {% if page.agent_markdown_url %}
+  <link rel="alternate" type="text/markdown" title="{{ page.title }} (Markdown)" href="{{ page.agent_markdown_url | absolute_url }}">
+  {% endif %}
   <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/css/syntax-highlighting.css" | relative_url }}">
   <script src="https://tinylytics.app/embed/CGqD_ZA2yRPGVnZcZXp1.js" defer></script>

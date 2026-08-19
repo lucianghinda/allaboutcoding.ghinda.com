@@ -39,6 +39,7 @@ group :jekyll_plugins do
   gem "jekyll-tagging"
   gem "jekyll-toc"                  # toshimaru/jekyll-toc: per-post TOC, enabled with `toc: true` front matter
   gem "jekyll-redirect-from"        # jekyll/jekyll-redirect-from: `redirect_from:` front matter for old/wrong URLs
+  gem "jekyll-agent-markdown"       # lucianghinda/jekyll-agent-markdown: raw .md next to each post, plus /llms.txt
 end
 
 # Selects Tailwind v4 for jekyll-tailwind (bundles the standalone CLI binary)

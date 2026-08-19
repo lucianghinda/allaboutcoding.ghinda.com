@@ -41,6 +41,14 @@ toc:
   max_level: 2
   ordered_list: true
 
+# lucianghinda/jekyll-agent-markdown: writes each post's raw Markdown next to its
+# HTML (/foo/ -> /foo.md) and an /llms.txt index of those .md URLs. Both default
+# to true; spelling them out means a missing `url:` fails the build loudly
+# instead of silently skipping llms.txt. Opt a post out with `agent_markdown: false`.
+agent_markdown:
+  posts: true
+  llms_txt: true
+
 # jekyll-seo-tag configuration
 author: Lucian Ghinda
 logo: /assets/images/home-blog-card.png
