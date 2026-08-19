@@ -20,6 +20,22 @@ bundle exec jekyll serve          # http://localhost:4000
 Tailwind is compiled by the jekyll-tailwind plugin during the Jekyll build,
 from `_tailwind.css` into `_site/assets/css/styles.css`. No `node_modules`.
 
+## After publishing an article
+
+Regenerate the "Read next" suggestions and commit the result:
+
+```sh
+bundle exec ruby bin/compute_related_posts.rb   # ~16 minutes
+```
+
+This writes `_data/related_posts.yml`, which the post layout reads. The
+ranking is latent semantic indexing over post bodies, the same thing
+`jekyll build --lsi` does — but that flag makes every build take those 16
+minutes, including each deploy, so the slow part runs here instead and the
+result is committed. A post missing from the file simply renders no
+suggestions, so forgetting this step degrades quietly rather than breaking
+the build.
+
 ## Migration runbook (one-off)
 
 The `_posts/`, `_data/series.yml`, `series/*.md`, and `assets/images/posts/`

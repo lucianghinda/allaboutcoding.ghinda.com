@@ -1,6 +1,28 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.4.1"
+
+# Latent semantic indexing, used by bin/compute_related_posts.rb to rank
+# related posts. Local only: the deploy build reads the committed result in
+# _data/related_posts.yml and never runs the indexer.
+gem "classifier-reborn", group: :development
+
+# classifier-reborn picks its SVD backend at require time: numo, then GSL,
+# then a pure-Ruby matrix. The Ruby one takes ~16 minutes to index this site.
+#
+# Optional group, so a plain `bundle install` (CI included) skips it and falls
+# back to pure Ruby. To enable it locally you need OpenBLAS, and numo-linalg
+# has to be built against it -- its library paths are baked in at build time:
+#
+#   brew install openblas
+#   bundle config set --local with lsi
+#   gem install numo-linalg -- --with-openblas-dir=$(brew --prefix openblas) \
+#                              --with-backend=openblas
+#   bundle install
+group :lsi, optional: true do
+  gem "numo-narray"
+  gem "numo-linalg"
+end
 gem "csv"
 
 # Ruby 3.4+ no longer bundles these; needed by Jekyll / jekyll serve
