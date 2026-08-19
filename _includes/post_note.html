@@ -12,15 +12,15 @@
   - the note body keeps its overrides on the wrapper (`[&_p]:text-sm`), which
     compiles to the same specificity and wins on source order.
 
-  Nothing here is bold. The body font ships only 400 and 700, so any weight
-  above 400 snaps to the bold face and shouts; `[&_code]:font-normal` does the
-  same for inline code, which Typography sets to 600. The label is marked with
-  italic and a slightly stronger color instead, matching the post date above.
+  The body font ships only 400 and 700, so `font-semibold` on the label paints
+  the 700 face: there is no 600 file to load. It stays in the muted body color
+  to keep that in check. Inline code gets `[&_code]:font-normal` for the same
+  reason, undoing the 600 Typography sets on it.
 {% endcomment %}
 {% if page.note %}
   <aside aria-labelledby="post-note-title"
     class="mt-10 p-5 text-stone-500 dark:text-stone-400">
-    <div id="post-note-title" class="mb-1.5 text-sm italic text-stone-600 dark:text-stone-300">
+    <div id="post-note-title" class="mb-1.5 text-sm font-semibold">
       {{ page.note_title | default: "How this article was written" }}
     </div>
     <div class="[&_p]:my-0 [&_p]:text-sm [&_p]:leading-relaxed [&_p+p]:mt-3 [&_a]:text-inherit [&_code]:font-normal">
