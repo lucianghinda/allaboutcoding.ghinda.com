@@ -15,8 +15,8 @@
 - "/why-you-should-participate-to-friendlyrb-in-september-2024/"
 "/how-to-open-rails-console-in-safe-mode-on-gcp-k8s/":
 - "/how-to-skip-all-callbacks-for-all-models-in-rails/"
-- "/exploring-it-default-block-param-warning-in-ruby-33/"
 - "/add-code-snippet-in-rubymine-and-visual-studio-code-to-bindingbreak/"
+- "/exploring-it-default-block-param-warning-in-ruby-33/"
 - "/finding-where-a-method-is-defined-in-ruby-using-irb/"
 - "/how-to-create-a-new-project-with-rails-700rc1/"
 "/simple-guidelines-for-working-with-time-and-timezones-for-apis/":
@@ -33,10 +33,10 @@
 - "/minimize-dependencies-when-possible/"
 "/how-to-create-a-new-project-with-rails-700rc1/":
 - "/first-commits-in-a-ruby-on-rails-app/"
-- "/add-code-snippet-in-rubymine-and-visual-studio-code-to-bindingbreak/"
 - "/how-to-open-rails-console-in-safe-mode-on-gcp-k8s/"
+- "/add-code-snippet-in-rubymine-and-visual-studio-code-to-bindingbreak/"
 - "/the-tech-stack-i-choose-to-build-my-email-courses-project/"
-- "/configure-claude-code-with-ruby-lsp/"
+- "/setting-the-status-line-for-all-projects-in-codex/"
 "/ruby-using-all-when-the-variable-can-be-an-empty-array/":
 - "/alternative-ways-to-freeze-a-string-in-ruby/"
 - "/active-record-how-to-select-rows-based-on-the-number-of-items-in-an-array-column-postgresql/"
@@ -47,8 +47,8 @@
 - "/what-to-work-on-when-learning-a-new-language/"
 - "/how-to-learn-ruby/"
 - "/stay-up-to-date-with-new-ruby-or-rails-features/"
-- "/this-week-focus-refactoring/"
 - "/write-tests-on-all-test-levels/"
+- "/this-week-focus-refactoring/"
 "/active-record-how-to-select-rows-based-on-the-number-of-items-in-an-array-column-postgresql/":
 - "/ruby-using-all-when-the-variable-can-be-an-empty-array/"
 - "/how-to-work-with-postgresql-enums-in-rails-7/"
@@ -70,8 +70,8 @@
 "/how-to-assign-multiple-instance-variables-to-a-class-in-ruby/":
 - "/how-to-get-class-name-and-module-name-in-ruby/"
 - "/more-about-how-to-create-a-data-class-in-ruby/"
-- "/what-is-a-class-in-ruby/"
 - "/ruby-what-does-and-and-or-return/"
+- "/what-is-a-class-in-ruby/"
 - "/endless-method-a-quick-intro/"
 "/how-to-update-multiple-different-values-at-the-same-time-in-one-query/":
 - "/active-record-how-to-select-rows-based-on-the-number-of-items-in-an-array-column-postgresql/"
@@ -93,8 +93,8 @@
 - "/why-participate-in-a-coding-competition/"
 "/resources-to-learn-ruby-on-rails-7/":
 - "/why-do-i-include-a-community-section-in-short-ruby-news/"
-- "/a-recommended-list-of-resources-about-how-ruby-is-evolving/"
 - "/how-to-create-a-new-rails-app-running-rails-71-beta-or-main-branch/"
+- "/a-recommended-list-of-resources-about-how-ruby-is-evolving/"
 - "/where-to-promote-an-article-about-ruby/"
 - "/exploring-it-default-block-param-warning-in-ruby-33/"
 "/why-participate-in-a-coding-competition/":
@@ -112,14 +112,14 @@
 "/a-case-for-using-git-worktree/":
 - "/write-tests-on-all-test-levels/"
 - "/refactoring-instance-variables-to-local-variables-in-rails-controllers/"
-- "/how-to-open-rails-console-in-safe-mode-on-gcp-k8s/"
 - "/how-to-skip-all-callbacks-for-all-models-in-rails/"
 - "/changing-the-parent-resource-parameter-key-in-rails/"
+- "/how-to-open-rails-console-in-safe-mode-on-gcp-k8s/"
 "/how-to-learn-ruby/":
 - "/what-to-work-on-when-learning-a-new-language/"
 - "/a-recommended-list-of-resources-about-how-ruby-is-evolving/"
-- "/minimize-dependencies-when-possible/"
 - "/this-week-focus-refactoring/"
+- "/minimize-dependencies-when-possible/"
 - "/hash-value-omission-an-introduction-and-some-examples/"
 "/what-is-a-class-in-ruby/":
 - "/we-should-adopt-and-use-new-ruby-features/"
@@ -202,8 +202,8 @@
 "/this-week-focus-refactoring/":
 - "/an-endless-method-use-case/"
 - "/a-methods-gravity/"
-- "/refactoring-instance-variables-to-local-variables-in-rails-controllers/"
 - "/refactoring-transaction-blocks-with-the-endless-method/"
+- "/refactoring-instance-variables-to-local-variables-in-rails-controllers/"
 - "/how-to-learn-ruby/"
 "/why-write-technical-content-on-a-blog-and-not-only-on-social-media/":
 - "/a-simple-idea-of-how-to-grow-the-ruby-community/"
@@ -212,11 +212,11 @@
 - "/where-to-promote-an-article-about-ruby/"
 - "/stay-up-to-date-with-new-ruby-or-rails-features/"
 "/a-simple-idea-of-how-to-grow-the-ruby-community/":
-- "/stay-up-to-date-with-new-ruby-or-rails-features/"
 - "/why-write-technical-content-on-a-blog-and-not-only-on-social-media/"
+- "/stay-up-to-date-with-new-ruby-or-rails-features/"
 - "/how-to-implement-json-ld-schema-for-your-blog/"
-- "/where-to-promote-an-article-about-ruby/"
 - "/this-week-focus-documentation/"
+- "/where-to-promote-an-article-about-ruby/"
 "/why-do-i-include-a-community-section-in-short-ruby-news/":
 - "/why-you-should-participate-to-friendlyrb-in-september-2024/"
 - "/insights-from-stack-overflow-developer-survey-2023-about-ruby/"
@@ -228,13 +228,13 @@
 - "/about-ruby-a-tale-of-searching-for-the-main/"
 - "/using-chatgpt-github-copilot-and-phind-to-generate-tailwind-config-for-width-classes/"
 - "/two-insights-from-using-sorbet/"
-- "/ruby-what-does-and-and-or-return/"
+- "/a-comparison-of-multiple-generative-ai-tools-when-asking-for-ruby-on-rails-code/"
 "/a-comparison-of-multiple-generative-ai-tools-when-asking-for-ruby-on-rails-code/":
 - "/using-cursor-ide-for-some-small-changes-in-a-rails-app/"
 - "/this-week-focus-refactoring/"
-- "/using-gpt-4-to-refactor-a-simple-html-page/"
 - "/review-ruby-on-rails-code-using-rubymine-ai-and-chatgpt/"
-- "/stay-up-to-date-with-new-ruby-or-rails-features/"
+- "/using-gpt-4-to-refactor-a-simple-html-page/"
+- "/this-week-focus-documentation/"
 "/about-ruby-pass-by-value-or-pass-by-reference/":
 - "/hash-value-omission-an-introduction-and-some-examples/"
 - "/ruby-what-does-and-and-or-return/"
@@ -257,8 +257,8 @@
 - "/why-you-should-participate-to-friendlyrb-in-september-2024/"
 - "/why-do-i-include-a-community-section-in-short-ruby-news/"
 - "/stay-up-to-date-with-new-ruby-or-rails-features/"
-- "/ruby-gems-download-trends-an-analysis-from-2013-to-2023/"
 - "/a-simple-idea-of-how-to-grow-the-ruby-community/"
+- "/ruby-gems-download-trends-an-analysis-from-2013-to-2023/"
 "/bugs-errors-and-causes-from-an-1975-paper/":
 - "/this-week-focus-refactoring/"
 - "/why-participate-in-a-coding-competition/"
@@ -282,7 +282,7 @@
 - "/how-to-make-a-small-pulsating-animation/"
 - "/an-endless-method-use-case/"
 - "/what-i-wrote-this-week-about-ruby/"
-- "/exploring-it-default-block-param-warning-in-ruby-33/"
+- "/a-recommended-list-of-resources-about-how-ruby-is-evolving/"
 "/ruby-on-rails-can-scale-here-is-one-example/":
 - "/how-to-create-a-new-rails-app-running-rails-71-beta-or-main-branch/"
 - "/what-i-wrote-this-week-about-ruby/"
@@ -314,11 +314,11 @@
 - "/how-to-skip-all-callbacks-for-all-models-in-rails/"
 - "/an-endless-method-use-case/"
 "/ruby-gems-download-trends-an-analysis-from-2013-to-2023/":
-- "/resources-to-learn-ruby-on-rails-7/"
 - "/insights-from-stack-overflow-developer-survey-2023-about-ruby/"
 - "/ruby-open-source-zammad-example/"
+- "/resources-to-learn-ruby-on-rails-7/"
 - "/exploring-it-default-block-param-warning-in-ruby-33/"
-- "/micro-benchmarking-value-objects-in-ruby-datadefine-vs-struct-vs-openstruct/"
+- "/ruby-on-rails-can-scale-here-is-one-example/"
 "/ruby-open-source-chatwoot/":
 - "/ruby-open-source-feedbin/"
 - "/ruby-open-source-zammad-example/"
@@ -336,13 +336,13 @@
 - "/ruby-open-source-zammad-example/"
 - "/ruby-on-rails-open-source-mastodon/"
 - "/how-to-skip-all-callbacks-for-all-models-in-rails/"
-- "/an-endless-method-use-case/"
+- "/exploring-it-default-block-param-warning-in-ruby-33/"
 "/review-ruby-on-rails-code-using-rubymine-ai-and-chatgpt/":
 - "/endless-method-a-quick-intro/"
 - "/this-week-focus-refactoring/"
 - "/an-endless-method-use-case/"
-- "/in-defense-of-rubys-short-hand-syntax/"
 - "/a-methods-gravity/"
+- "/in-defense-of-rubys-short-hand-syntax/"
 "/an-endless-method-use-case/":
 - "/this-week-focus-refactoring/"
 - "/refactoring-transaction-blocks-with-the-endless-method/"
@@ -372,18 +372,18 @@
 - "/changing-the-parent-resource-parameter-key-in-rails/"
 - "/exploring-it-default-block-param-warning-in-ruby-33/"
 - "/about-ruby-a-tale-of-searching-for-the-main/"
-- "/proposal-for-making-private-keyword-work-on-constants-too/"
+- "/endless-method-a-quick-intro/"
 "/first-commits-in-a-ruby-on-rails-app/":
 - "/the-tech-stack-i-choose-to-build-my-email-courses-project/"
 - "/how-to-add-rubocop-mcp-to-claude-code-and-opencode/"
 - "/why-do-i-include-a-community-section-in-short-ruby-news/"
-- "/about-ruby-a-tale-of-searching-for-the-main/"
 - "/how-to-create-a-new-project-with-rails-700rc1/"
+- "/about-ruby-a-tale-of-searching-for-the-main/"
 "/the-tech-stack-i-choose-to-build-my-email-courses-project/":
 - "/first-commits-in-a-ruby-on-rails-app/"
+- "/how-to-create-a-new-project-with-rails-700rc1/"
 - "/ruby-on-rails-projects-that-might-inspire-you-to-start-your-own/"
 - "/what-to-work-on-when-learning-a-new-language/"
-- "/how-to-create-a-new-project-with-rails-700rc1/"
 - "/write-tests-on-all-test-levels/"
 "/two-insights-from-using-sorbet/":
 - "/proposal-for-making-private-keyword-work-on-constants-too/"
@@ -405,10 +405,10 @@
 - "/how-to-make-a-small-pulsating-animation/"
 "/add-code-snippet-in-rubymine-and-visual-studio-code-to-bindingbreak/":
 - "/finding-where-a-method-is-defined-in-ruby-using-irb/"
+- "/setting-the-status-line-for-all-projects-in-codex/"
 - "/this-week-focus-documentation/"
 - "/configure-claude-code-with-ruby-lsp/"
 - "/how-to-open-rails-console-in-safe-mode-on-gcp-k8s/"
-- "/more-about-how-to-create-a-data-class-in-ruby/"
 "/endless-method-a-quick-intro/":
 - "/an-endless-method-use-case/"
 - "/review-ruby-on-rails-code-using-rubymine-ai-and-chatgpt/"
@@ -416,8 +416,8 @@
 - "/hash-value-omission-an-introduction-and-some-examples/"
 - "/exploring-it-default-block-param-warning-in-ruby-33/"
 "/refactoring-transaction-blocks-with-the-endless-method/":
-- "/an-endless-method-use-case/"
 - "/this-week-focus-refactoring/"
+- "/an-endless-method-use-case/"
 - "/history-of-the-endless-method-syntax/"
 - "/endless-method-a-quick-intro/"
 - "/refactoring-instance-variables-to-local-variables-in-rails-controllers/"
@@ -431,8 +431,8 @@
 - "/why-do-i-include-a-community-section-in-short-ruby-news/"
 - "/insights-from-stack-overflow-developer-survey-2023-about-ruby/"
 - "/a-simple-idea-of-how-to-grow-the-ruby-community/"
-- "/where-to-promote-an-article-about-ruby/"
 - "/stay-up-to-date-with-new-ruby-or-rails-features/"
+- "/where-to-promote-an-article-about-ruby/"
 "/proposal-for-making-private-keyword-work-on-constants-too/":
 - "/about-ruby-a-tale-of-searching-for-the-main/"
 - "/exploring-it-default-block-param-warning-in-ruby-33/"
@@ -462,7 +462,7 @@
 - "/what-i-wrote-this-week-about-ruby-2/"
 - "/how-to-make-sure-you-review-your-monkey-patch-when-updating-ruby-gems/"
 - "/everything-that-i-published-this-week-about-ruby-4/"
-- "/ruby-on-rails-can-scale-here-is-one-example/"
+- "/using-chatgpt-github-copilot-and-phind-to-generate-tailwind-config-for-width-classes/"
 "/what-i-wrote-this-week-about-ruby-3/":
 - "/everything-that-i-published-this-week-about-ruby-4/"
 - "/what-i-wrote-this-week-about-ruby/"
@@ -470,11 +470,11 @@
 - "/how-to-make-sure-you-review-your-monkey-patch-when-updating-ruby-gems/"
 - "/how-to-make-a-small-pulsating-animation/"
 "/overriding-methods-in-ruby-on-rails-a-no-code-editing-approach/":
-- "/proposal-for-making-private-keyword-work-on-constants-too/"
 - "/about-ruby-a-tale-of-searching-for-the-main/"
+- "/proposal-for-making-private-keyword-work-on-constants-too/"
 - "/how-to-skip-all-callbacks-for-all-models-in-rails/"
 - "/we-should-adopt-and-use-new-ruby-features/"
-- "/finding-where-a-method-is-defined-in-ruby-using-irb/"
+- "/exploring-it-default-block-param-warning-in-ruby-33/"
 "/how-to-return-multiple-values-from-a-method-in-ruby-using-datadefine/":
 - "/how-to-use-pattern-matching-to-locate-elements-in-a-hash-array/"
 - "/how-to-create-value-objects-in-ruby-the-idiomatic-way/"
@@ -486,11 +486,11 @@
 - "/what-i-wrote-this-week-about-ruby-2/"
 - "/what-i-wrote-this-week-about-ruby/"
 - "/example-of-value-objects-using-rubys-data-class/"
-- "/how-to-make-a-small-pulsating-animation/"
+- "/how-to-make-sure-you-review-your-monkey-patch-when-updating-ruby-gems/"
 "/how-to-make-sure-you-review-your-monkey-patch-when-updating-ruby-gems/":
 - "/rspec-and-let-understanding-the-potential-pitfalls/"
-- "/example-of-value-objects-using-rubys-data-class/"
 - "/how-to-make-a-small-pulsating-animation/"
+- "/example-of-value-objects-using-rubys-data-class/"
 - "/everything-that-i-published-this-week-about-ruby-4/"
 - "/what-i-wrote-this-week-about-ruby-2/"
 "/how-to-implement-json-ld-schema-for-your-blog/":
@@ -516,7 +516,7 @@
 - "/exploring-it-default-block-param-warning-in-ruby-33/"
 - "/how-to-assign-multiple-instance-variables-to-a-class-in-ruby/"
 - "/how-to-skip-all-callbacks-for-all-models-in-rails/"
-- "/hash-value-omission-an-introduction-and-some-examples/"
+- "/alternative-ways-to-freeze-a-string-in-ruby/"
 "/prefer-getter-methods-over-instance-variables-inside-ruby-objects/":
 - "/exploring-it-default-block-param-warning-in-ruby-33/"
 - "/avoid-microsecond-pitfalls-when-comparing-times-in-tests/"
@@ -531,8 +531,8 @@
 - "/ruby-on-rails-loading-locales-with-yes-no-on-and-off/"
 "/ruby-on-rails-loading-locales-with-yes-no-on-and-off/":
 - "/rspec-and-let-understanding-the-potential-pitfalls/"
-- "/how-to-use-pattern-matching-to-locate-elements-in-a-hash-array/"
 - "/avoid-microsecond-pitfalls-when-comparing-times-in-tests/"
+- "/how-to-use-pattern-matching-to-locate-elements-in-a-hash-array/"
 - "/how-to-make-sure-you-review-your-monkey-patch-when-updating-ruby-gems/"
 - "/example-of-value-objects-using-rubys-data-class/"
 "/how-to-use-pattern-matching-to-locate-elements-in-a-hash-array/":
@@ -540,42 +540,42 @@
 - "/avoid-microsecond-pitfalls-when-comparing-times-in-tests/"
 - "/rspec-and-let-understanding-the-potential-pitfalls/"
 - "/ruby-on-rails-loading-locales-with-yes-no-on-and-off/"
-- "/everything-that-i-published-this-week-about-ruby-4/"
+- "/example-of-value-objects-using-rubys-data-class/"
 "/rspec-and-let-understanding-the-potential-pitfalls/":
 - "/avoid-microsecond-pitfalls-when-comparing-times-in-tests/"
 - "/how-to-use-pattern-matching-to-locate-elements-in-a-hash-array/"
 - "/how-to-make-sure-you-review-your-monkey-patch-when-updating-ruby-gems/"
-- "/everything-that-i-published-this-week-about-ruby-4/"
 - "/ruby-on-rails-loading-locales-with-yes-no-on-and-off/"
+- "/everything-that-i-published-this-week-about-ruby-4/"
 "/improving-git-diffs-with-delta/":
 - "/rspec-and-let-understanding-the-potential-pitfalls/"
 - "/ruby-on-rails-loading-locales-with-yes-no-on-and-off/"
 - "/avoid-microsecond-pitfalls-when-comparing-times-in-tests/"
 - "/how-to-make-sure-you-review-your-monkey-patch-when-updating-ruby-gems/"
-- "/how-to-use-pattern-matching-to-locate-elements-in-a-hash-array/"
+- "/how-to-implement-json-ld-schema-for-your-blog/"
 "/essential-ruby-gems-for-working-with-agent-skills-files/":
+- "/setting-the-status-line-for-all-projects-in-codex/"
 - "/write-agent-scripts-in-ruby/"
-- "/opencode-uses-rubocop-as-the-ruby-language-server/"
 - "/setting-up-a-workflow-with-superplanning-and-fizzy/"
+- "/opencode-uses-rubocop-as-the-ruby-language-server/"
 - "/you-can-use-ruby-to-set-the-status-line-in-claude-code/"
-- "/configure-claude-code-with-ruby-lsp/"
 "/configure-claude-code-with-ruby-lsp/":
 - "/how-to-add-rubocop-mcp-to-claude-code-and-opencode/"
 - "/opencode-uses-rubocop-as-the-ruby-language-server/"
+- "/setting-the-status-line-for-all-projects-in-codex/"
 - "/add-code-snippet-in-rubymine-and-visual-studio-code-to-bindingbreak/"
 - "/write-agent-scripts-in-ruby/"
-- "/essential-ruby-gems-for-working-with-agent-skills-files/"
 "/opencode-uses-rubocop-as-the-ruby-language-server/":
 - "/how-to-add-rubocop-mcp-to-claude-code-and-opencode/"
 - "/configure-claude-code-with-ruby-lsp/"
 - "/write-agent-scripts-in-ruby/"
+- "/setting-the-status-line-for-all-projects-in-codex/"
 - "/superpowers-ruby-v5-0-6-compound-skills-and-ruby-idiom-fixes/"
-- "/essential-ruby-gems-for-working-with-agent-skills-files/"
 "/how-to-add-rubocop-mcp-to-claude-code-and-opencode/":
 - "/opencode-uses-rubocop-as-the-ruby-language-server/"
 - "/configure-claude-code-with-ruby-lsp/"
+- "/setting-the-status-line-for-all-projects-in-codex/"
 - "/you-can-use-ruby-to-set-the-status-line-in-claude-code/"
-- "/first-commits-in-a-ruby-on-rails-app/"
 - "/write-agent-scripts-in-ruby/"
 "/3-new-rubocop-style-cops-selectbykind-selectbyrange-partitioninsteadofdoubleselect/":
 - "/how-to-return-multiple-values-from-a-method-in-ruby-using-datadefine/"
@@ -594,7 +594,7 @@
 - "/stats-from-two-months-agent-first-development-using-backoffs/"
 - "/adding-session-handoff-to-superpowers-ruby/"
 - "/you-can-use-ruby-to-set-the-status-line-in-claude-code/"
-- "/one-week-of-coding-and-reviewing-with-llm-agents/"
+- "/essential-ruby-gems-for-working-with-agent-skills-files/"
 "/superpowers-ruby-v6-1-0-a-rails-upgrade-skill/":
 - "/superpowers-ruby-v5-0-6-compound-skills-and-ruby-idiom-fixes/"
 - "/superplanning-a-unified-planning-skill-for-claude-code/"
@@ -604,8 +604,8 @@
 "/two-agent-skills-to-help-with-prompt-security/":
 - "/a-comparison-of-multiple-generative-ai-tools-when-asking-for-ruby-on-rails-code/"
 - "/superplanning-a-unified-planning-skill-for-claude-code/"
-- "/stats-from-two-months-agent-first-development-using-backoffs/"
 - "/essential-ruby-gems-for-working-with-agent-skills-files/"
+- "/stats-from-two-months-agent-first-development-using-backoffs/"
 - "/write-agent-scripts-in-ruby/"
 "/adding-session-handoff-to-superpowers-ruby/":
 - "/superplanning-a-unified-planning-skill-for-claude-code/"
@@ -626,38 +626,44 @@
 - "/setting-up-a-workflow-with-superplanning-and-fizzy/"
 - "/adding-session-handoff-to-superpowers-ruby/"
 "/write-agent-scripts-in-ruby/":
+- "/setting-the-status-line-for-all-projects-in-codex/"
 - "/you-can-use-ruby-to-set-the-status-line-in-claude-code/"
 - "/opencode-uses-rubocop-as-the-ruby-language-server/"
 - "/stats-from-two-months-agent-first-development-using-backoffs/"
-- "/explain-to-me-in-simple-technical-english/"
-- "/one-week-of-coding-and-reviewing-with-llm-agents/"
+- "/how-to-add-rubocop-mcp-to-claude-code-and-opencode/"
 "/where-ai-coding-clis-store-session-logs/":
 - "/one-week-of-coding-and-reviewing-with-llm-agents/"
+- "/setting-the-status-line-for-all-projects-in-codex/"
 - "/you-can-use-ruby-to-set-the-status-line-in-claude-code/"
 - "/what-the-handbook-md-benchmark-says-about-your-claude-md/"
 - "/write-agent-scripts-in-ruby/"
-- "/how-to-add-rubocop-mcp-to-claude-code-and-opencode/"
 "/one-week-of-coding-and-reviewing-with-llm-agents/":
 - "/what-the-handbook-md-benchmark-says-about-your-claude-md/"
 - "/where-ai-coding-clis-store-session-logs/"
 - "/stats-from-two-months-agent-first-development-using-backoffs/"
-- "/you-can-use-ruby-to-set-the-status-line-in-claude-code/"
 - "/explain-to-me-in-simple-technical-english/"
+- "/you-can-use-ruby-to-set-the-status-line-in-claude-code/"
 "/what-the-handbook-md-benchmark-says-about-your-claude-md/":
 - "/one-week-of-coding-and-reviewing-with-llm-agents/"
 - "/where-ai-coding-clis-store-session-logs/"
 - "/explain-to-me-in-simple-technical-english/"
+- "/setting-the-status-line-for-all-projects-in-codex/"
 - "/write-agent-scripts-in-ruby/"
-- "/you-can-use-ruby-to-set-the-status-line-in-claude-code/"
 "/explain-to-me-in-simple-technical-english/":
 - "/write-agent-scripts-in-ruby/"
 - "/one-week-of-coding-and-reviewing-with-llm-agents/"
+- "/setting-the-status-line-for-all-projects-in-codex/"
 - "/you-can-use-ruby-to-set-the-status-line-in-claude-code/"
 - "/what-the-handbook-md-benchmark-says-about-your-claude-md/"
-- "/where-ai-coding-clis-store-session-logs/"
 "/you-can-use-ruby-to-set-the-status-line-in-claude-code/":
+- "/setting-the-status-line-for-all-projects-in-codex/"
 - "/write-agent-scripts-in-ruby/"
-- "/where-ai-coding-clis-store-session-logs/"
 - "/how-to-add-rubocop-mcp-to-claude-code-and-opencode/"
-- "/one-week-of-coding-and-reviewing-with-llm-agents/"
+- "/where-ai-coding-clis-store-session-logs/"
 - "/essential-ruby-gems-for-working-with-agent-skills-files/"
+"/setting-the-status-line-for-all-projects-in-codex/":
+- "/you-can-use-ruby-to-set-the-status-line-in-claude-code/"
+- "/write-agent-scripts-in-ruby/"
+- "/how-to-add-rubocop-mcp-to-claude-code-and-opencode/"
+- "/configure-claude-code-with-ruby-lsp/"
+- "/add-code-snippet-in-rubymine-and-visual-studio-code-to-bindingbreak/"
