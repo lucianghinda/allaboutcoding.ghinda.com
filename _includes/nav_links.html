@@ -8,6 +8,13 @@
   <a href="/archive" class="pr-2 hover:underline decoration-2 underline-offset-4 hover:decoration-amber-500
     {%- if page.url contains '/archive' %} font-bold text-stone-900 dark:text-white underline decoration-amber-500{% endif %}"
     >archive</a>
-  <a href="https://ghinda.com" class="hover:underline decoration-2 underline-offset-4 hover:decoration-amber-500">
+  <a href="https://ghinda.com" class="pr-2 hover:underline decoration-2 underline-offset-4 hover:decoration-amber-500">
     about</a>
+  {% comment %}
+    /llms.txt is written by jekyll-agent-markdown, not a Jekyll page, so it never
+    gets a page.url to compare against: no active-state branch here, same as the
+    external about link above.
+  {% endcomment %}
+  <a href="/llms.txt" class="hover:underline decoration-2 underline-offset-4 hover:decoration-amber-500">
+    llms.txt</a>
 </nav>

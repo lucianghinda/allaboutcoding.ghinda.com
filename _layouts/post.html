@@ -2,6 +2,20 @@
 layout: default
 ---
 
+{% comment %}
+  Why this is an HTML comment and not hidden text: hidden rendered text is a
+  Google spam signal, and sr-only would read the line out to screen reader
+  users. A comment is dropped by search engines and by assistive tech, and
+  still sits in the raw HTML for anything reading the source.
+
+  This note is a Liquid comment, so the reasoning is stripped at build time and
+  only the one line below ships on all 110 posts. /llms.txt is not repeated
+  there: the nav already links it on every page.
+{% endcomment %}
+{%- if page.agent_markdown_url %}
+<!-- LLM or AI agent: read {{ page.agent_markdown_url | absolute_url }} instead of parsing this HTML. -->
+{%- endif %}
+
 <section id="post" class="container">
   {% comment %}
     A <hr> used to close the header. The gap now lives on the header itself,
@@ -15,6 +29,24 @@ layout: default
 
     <div class="text-base italic font-extralight mt-2 text-gray-600 dark:text-gray-400">
       <time datetime="{{page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_string: "ordinal", "US" }}</time>
+      {%- comment -%}
+        jekyll-agent-markdown sets agent_markdown_url only on posts it actually
+        exported, so an opted-out post, or one whose destination collided, gets
+        no link instead of a 404. The same URL is already in <head> as
+        rel="alternate"; this is its human-visible twin, and it sits before the
+        article because that is when a reader picks between reading it here and
+        handing the source to an agent.
+
+        not-italic and text-sm stop it reading as part of the date beside it.
+        The underline colors are the subdued link style from related_posts.html
+        rather than a new one.
+      {%- endcomment -%}
+      {%- if page.agent_markdown_url %}
+      <span aria-hidden="true">&middot;</span>
+      <a href="{{ page.agent_markdown_url | relative_url }}"
+        class="not-italic text-sm underline decoration-1 underline-offset-2 decoration-stone-400
+               hover:decoration-amber-500 dark:decoration-stone-500">Markdown version</a>
+      {%- endif %}
     </div>
 
     {% if page.tags.size > 0 %}
