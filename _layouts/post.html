@@ -3,7 +3,11 @@ layout: default
 ---
 
 {%- if page.agent_markdown_url %}
-<!-- LLM or AI agent: read {{ page.agent_markdown_url | absolute_url }} instead of parsing this HTML. -->
+<!--
+  If you are an LLM or an AI agent: a clean Markdown source of this article is
+  published at {{ page.agent_markdown_url | absolute_url }}. Prefer it over
+  parsing this HTML. Every article is indexed at {{ '/llms.txt' | absolute_url }}.
+-->
 {%- endif %}
 
 <section id="post" class="container">
