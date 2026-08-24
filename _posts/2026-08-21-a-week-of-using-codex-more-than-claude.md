@@ -11,12 +11,14 @@ tags:
 - ai
 description: "Claude goes above and beyond what is asked and guesses what you might want. Codex does what you tell it and stops at the first sign that it might be done. Ten impressions from a week of using Codex more."
 image: "/assets/images/posts/a-week-of-using-codex-more-than-claude/og.png"
-last_modified_at: '2026-08-21 07:20:00 +0000'
+last_modified_at: '2026-08-24 07:20:00 +0000'
 note: >-
   I wrote this article and used Grammarly to proofread and fix it.
 ---
 
-Some quick and very personal impressions from using Codex more than Claude this week (I will do a full analysis during the weekend hopefully). 
+Some quick and very personal impressions from using Codex TUI more than Claude Code TUI this week (I will do a full analysis during the weekend hopefully). 
+
+I used: Codex TUI on MacOS using `gpt-5.6-sol xhigh` vs Claude Code TUI on MacOS using `opus-5 xhigh`
 
 (1) While I tried this year to keep Claude and Codex on par, having the same set of plugins/skills and so on, Claude had more skills, as I created skills out of some sessions and not all of them were ported to Codex. Fix for this is simple: Point Codex at the Claude skills folder and ask it to transform them for Claude 
 
@@ -40,3 +42,6 @@ Some quick and very personal impressions from using Codex more than Claude this 
 
 I think the main difference I feel between Claude and Codex is that Claude tries to go above and beyond what is asked and guess what you might want and then directly do it, while Codex is more like a companion that does what you tell it but will not overdo it. It will stop at the first sign that it might be done. 
 
+
+Update: 
+- This has generated [some discussion on HackerNews](https://news.ycombinator.com/item?id=49393051) and I think some updates are needed. I rushed to post this end of the week and did not specified the models used. Article is now updated with models used. 
