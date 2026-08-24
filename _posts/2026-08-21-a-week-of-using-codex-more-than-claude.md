@@ -18,7 +18,7 @@ note: >-
 
 Some quick and very personal impressions from using Codex TUI more than Claude Code TUI this week (I will do a full analysis during the weekend hopefully). 
 
-I used: Codex TUI on MacOS using `gpt-5.6-sol xhigh` vs Claude Code TUI on MacOS using `opus-5 xhigh`
+I used Codex TUI on MacOS using `gpt-5.6-sol xhigh` vs Claude Code TUI on MacOS using `opus-5 xhigh`. 
 
 (1) While I tried this year to keep Claude and Codex on par, having the same set of plugins/skills and so on, Claude had more skills, as I created skills out of some sessions and not all of them were ported to Codex. Fix for this is simple: Point Codex at the Claude skills folder and ask it to transform them for Claude 
 
