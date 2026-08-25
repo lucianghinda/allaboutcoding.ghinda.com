@@ -88,5 +88,21 @@ layout: default
     {% include post_note.html %}
   </div>
 
+  {%- comment -%}
+    The invite sits between the article and "Read next": that is the moment a
+    reader has just finished and is deciding what to do, and "Read next" still
+    works as the last block on the page.
+
+    Skipped when the post body already links the newsletter itself, so an
+    article making the ask in its own words does not get a card underneath
+    saying it again. No post does today (seven did, until this card replaced
+    them), but writing the invite by hand in a future article is enough to
+    suppress it. Opt out explicitly with `newsletter: false` in the front
+    matter.
+  {%- endcomment -%}
+  {%- unless page.newsletter == false or content contains "newsletter.lucianghinda.com" %}
+  {% include newsletter_invite.html hook="Enjoyed this article?" utm_medium="article" %}
+  {%- endunless %}
+
   {% include related_posts.html %}
 </section>

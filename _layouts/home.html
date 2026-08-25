@@ -27,7 +27,14 @@ layout: default
   </a>
 </div>
 
-<p class="font-normal text-lg text-center pb-4 text-stone-500 dark:text-stone-300">
+{%- comment -%}
+  Below the recent posts rather than above them: someone landing here came to
+  read, and the ask reads better once there is something to have liked. The
+  RSS line stays right underneath so both ways to follow sit together.
+{%- endcomment -%}
+{% include newsletter_invite.html hook="Newsletter" utm_medium="home" %}
+
+<p class="font-normal text-lg text-center pt-6 pb-4 text-stone-500 dark:text-stone-300">
   You can also <a href="/rss.xml"
     class="underline decoration-2 underline-offset-2 text-stone-500 dark:text-stone-200">subscribe with RSS!</a>
 </p>

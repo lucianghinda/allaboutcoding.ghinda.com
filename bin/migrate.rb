@@ -65,16 +65,24 @@ end
 # Convert Hashnode embed directives to Jekyll includes.
 #   %[https://youtu.be/ID]                -> {% include embed/youtube.html id="ID" %}
 #   %[https://twitter.com/u/status/123]   -> {% include embed/tweet.html url="..." %}
-#   %%[shortruby]                         -> {% include newsletter.html %}
+#   %%[shortruby]                         -> plain markdown link
 #   %[anything-else]                      -> plain markdown link + recorded for review
 def convert_embeds(md, unknown_sink)
+  # %%[shortruby] was Hashnode's inline signup box for the Short Ruby
+  # Newsletter. There is no Jekyll equivalent: the site-wide invite in
+  # _includes/newsletter_invite.html is for a different newsletter, and a
+  # mid-article box for a second one would be two competing asks on one page.
+  # A plain link keeps the reference without the furniture.
+  #
+  # Any other %%[...] directive is recorded for the reconciliation report and
+  # dropped, rather than silently rendered as a newsletter box it never was.
   md = md.gsub(/^\s*%%\[(\w+)\]\s*$/) do
     name = Regexp.last_match(1)
     if name == "shortruby"
-      "{% include newsletter.html %}"
+      "[Short Ruby Newsletter](https://newsletter.shortruby.com)"
     else
       unknown_sink << "%%[#{name}]"
-      "{% include newsletter.html %}"
+      ""
     end
   end
 

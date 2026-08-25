@@ -13,6 +13,30 @@ permalink: /:title/
 
 excerpt_separator: <!--more-->
 
+# Newsletter invite, rendered by _includes/newsletter_invite.html on the home
+# page and after every article. It lives here rather than in the template so
+# switching provider or endpoint is a config change.
+#
+# `action` is a plain GET to the beehiiv subscribe page: the address travels as
+# ?email=..., beehiiv prefills its own form, and the reader confirms there. That
+# keeps the site JavaScript-free and avoids an iframe that cannot follow the
+# dark theme. beehiiv uses double opt-in, so a direct POST would not save the
+# reader a confirmation step anyway.
+#
+# To subscribe in one step instead, take the embed URL from beehiiv
+# (Dashboard -> Grow -> Subscribe Forms -> Embed) and set:
+#   action: https://embeds.beehiiv.com/<uuid>
+#   method: post
+newsletter:
+  name: Field Notes
+  description: >-
+    A personal newsletter with ideas on Ruby, software development, testing,
+    building products and workshops, plus notes on creativity and tech trends.
+  url: https://newsletter.lucianghinda.com
+  action: https://newsletter.lucianghinda.com/subscribe
+  method: get
+  cadence: one email a week
+
 # crbelaus/jekyll-tailwind: compile _tailwind.css -> _site/assets/css/styles.css
 # (the <link> in _layouts/default.html points at /assets/css/styles.css)
 tailwind:
