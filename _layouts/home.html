@@ -10,7 +10,7 @@ layout: default
   Here's my most recent posts
 </h2>
 <ul>
-  {% for post in site.posts limit:3 %}
+  {% for post in site.posts limit:10 %}
   <li class="text-base list-inside pb-8">
     {% include post_link.html post=post %}
   </li>
