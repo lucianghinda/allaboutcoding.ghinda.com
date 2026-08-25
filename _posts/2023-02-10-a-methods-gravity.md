@@ -243,4 +243,3 @@ Even Sandi Metz [says](https://www.rubypigeon.com/posts/methods-can-be-longer-th
 ---
 
 If you like this type of content, you may want to consider subscribing to my curated newsletter [Short Ruby News](https://newsletter.shortruby.com) where I cover weekly Ruby news from around the internet.
-{% include newsletter.html %}

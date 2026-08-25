@@ -76,8 +76,8 @@ are all **generated** from a frozen dump of the Hashnode API. To (re)generate:
 - Frontmatter from the API: `title`, `date`, `slug`, `tags`, `description`
   (SEO), `image` (cover), `canonical_url`, `subtitle`, `last_modified_at`.
 - Body: strips Hashnode's `align="..."` image attribute; converts `%[youtube]`
-  and `%[twitter]` embeds to `_includes/embed/*`; converts `%%[shortruby]` to
-  `_includes/newsletter.html`; downloads every `cdn.hashnode.com` image into
+  and `%[twitter]` embeds to `_includes/embed/*`; converts `%%[shortruby]` to a plain
+  Short Ruby Newsletter link; downloads every `cdn.hashnode.com` image into
   `assets/images/posts/<slug>/` and rewrites the reference.
 
 ## Deploy (GitHub Pages)

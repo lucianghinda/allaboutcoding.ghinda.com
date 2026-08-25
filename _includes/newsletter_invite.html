@@ -1,0 +1,71 @@
+{% comment %}
+  Newsletter invite. Rendered once on the home page and once after each
+  article, from the `newsletter:` block in _config.yml.
+
+  Plain GET form on purpose. The site ships no JavaScript beyond the theme
+  toggle, and a provider iframe would be the only element on the page that
+  cannot follow the dark theme. So the form just hands the address to beehiiv
+  as a query parameter and lets the reader confirm there (beehiiv uses double
+  opt-in anyway, so nothing is saved on submit either way). If beehiiv ever
+  stops prefilling, the reader still lands on the subscribe page and types the
+  address — the worst case is one extra keystroke set, not a dead button.
+
+  Two visual notes, both about sitting next to related_posts.html at the end of
+  a post: this one is lighter than the page (bg-stone-50) where "Read next" is
+  darker (bg-stone-200/70), so the two blocks read as different things rather
+  than one long tinted slab. The amber left edge is the same accent the nav and
+  TOC links use on hover — the one place the site allows color.
+
+  Uses a fixed element id, so include it at most once per page.
+
+  Params:
+    hook       optional eyebrow line above the name ("Enjoyed this article?")
+    utm_medium attribution value passed through to beehiiv (default "site")
+{% endcomment %}
+{%- assign nl = site.newsletter -%}
+{%- if nl and nl.action %}
+<aside aria-labelledby="newsletter-invite-title"
+  class="mt-12 rounded-lg border-l-2 border-amber-500 bg-stone-50 p-5 ring-1 ring-stone-300/70
+         dark:bg-neutral-900/50 dark:ring-stone-600/60">
+
+  {%- if include.hook %}
+  <p class="text-xs font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400">
+    {{ include.hook }}
+  </p>
+  {%- endif %}
+
+  <h2 id="newsletter-invite-title"
+    class="mt-1 text-lg font-bold text-stone-800 dark:text-stone-100">{{ nl.name }}</h2>
+
+  {%- if nl.description %}
+  <p class="mt-1 text-sm leading-relaxed text-stone-600 dark:text-stone-300">{{ nl.description }}</p>
+  {%- endif %}
+
+  <form action="{{ nl.action }}" method="{{ nl.method | default: 'get' }}"
+    target="_blank" rel="noopener" class="mt-4 flex flex-col gap-2 sm:flex-row">
+    <label for="newsletter-email" class="sr-only">Your email address</label>
+    {%- comment -%}
+      text-base, not text-sm: iOS zooms the whole page in on focus for inputs
+      under 16px, and the card is the last thing a reader touches on a phone.
+    {%- endcomment -%}
+    <input type="email" id="newsletter-email" name="email" required autocomplete="email"
+      placeholder="you@example.com"
+      class="w-full flex-1 rounded-md border border-stone-300 bg-white px-3 py-2 text-base text-stone-800
+             placeholder:text-stone-400 focus:border-amber-500 focus:outline-none focus:ring-1 focus:ring-amber-500
+             dark:border-stone-600 dark:bg-neutral-800 dark:text-stone-100 dark:placeholder:text-stone-500">
+    <input type="hidden" name="utm_source" value="allaboutcoding.ghinda.com">
+    <input type="hidden" name="utm_medium" value="{{ include.utm_medium | default: 'site' }}">
+    <button type="submit"
+      class="shrink-0 rounded-md bg-amber-500 px-4 py-2 text-base font-bold text-stone-900 transition-colors
+             hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2
+             focus:ring-offset-stone-50 dark:focus:ring-offset-neutral-900">Subscribe</button>
+  </form>
+
+  <p class="mt-2.5 text-xs text-stone-500 dark:text-stone-400">
+    Free{% if nl.cadence %} &middot; {{ nl.cadence }}{% endif %} &middot; unsubscribe anytime &middot;
+    <a href="{{ nl.url }}" target="_blank" rel="noopener"
+      class="underline decoration-1 underline-offset-2 decoration-stone-400
+             hover:decoration-amber-500 dark:decoration-stone-500">read past issues</a>
+  </p>
+</aside>
+{%- endif %}
