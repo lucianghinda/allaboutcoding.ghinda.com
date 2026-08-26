@@ -65,15 +65,13 @@ toc:
   max_level: 2
   ordered_list: true
 
-# lucianghinda/jekyll-agent-markdown: writes each post's raw Markdown next to its
-# HTML (/foo/ -> /foo.md) and an /llms.txt index of those .md URLs. Both default
-# to true; spelling them out means a missing `url:` fails the build loudly
-# instead of silently skipping llms.txt. Opt a post out with `agent_markdown: false`.
-# sort/include_dates also match the gem defaults: llms.txt lists newest first, and
-# each export ends with its published and last_modified_at dates so an agent reading
-# the raw Markdown can tell how old the post is.
+# lucianghinda/jekyll-agent-markdown: writes raw Markdown siblings for posts and
+# Markdown-backed pages, then indexes them in /llms.txt. Explicit settings make a
+# missing `url:` fail the build loudly instead of silently skipping llms.txt.
+# Opt a document out with `agent_markdown: false` in its front matter.
 agent_markdown:
   posts: true
+  pages: true
   llms_txt: true
   sort: desc
   include_dates: true
