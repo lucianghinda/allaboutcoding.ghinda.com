@@ -29,7 +29,7 @@ I am of course open to PRs and changes at [https://github.com/lucianghinda/llm-p
 
 ## The Problem
 
-Think about what "checking for prompt injection" actually means in practice. It is not one thing. The [OWASP LLM01:2025 checklist](https://cheatsheetseries.owasp.org/cheatsheets/Prompt_Injection_Prevention_Cheat_Sheet.html) has 23 items just for direct injection. [MITRE ATLAS](https://atlas.mitre.org) adds 12 mitigation controls. [NVIDIA NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) covers another 16 implementation patterns for RAG pipelines and jailbreak detection.
+Think about what "checking for prompt injection" actually means in practice. It is not one thing. The [OWASP LLM01:2025 checklist](https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html) has 23 items just for direct injection. [MITRE ATLAS](https://atlas.mitre.org) adds 12 mitigation controls. [NVIDIA NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) covers another 16 implementation patterns for RAG pipelines and jailbreak detection.
 
 That is 51 distinct checks, and the list grows every time a new attack vector is discovered.
 
@@ -163,4 +163,4 @@ The project is open source. If you find that the builder generates code that doe
     
 *   [StruQ: Defending Against Prompt Injection with Structured Queries](https://arxiv.org/abs/2402.06363)
     
-*   [llm-prompt-injection-reviewer on GitHub](https://github.com/lucianghinda/llm-prompt-injection-reviewer)
+*   [llm-prompt-injection-reviewer on GitHub](https://github.com/lucianghinda/llm-prompts-skill/tree/main/llm-prompts-reviewer)
