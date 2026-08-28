@@ -44,7 +44,7 @@ The code and the git history survive compaction, of course. But if you have ever
 
 ## The design: a hybrid hook+skill approach
 
-I looked at several existing handoff implementations before building mine. The [pi-handoff plugin](https://github.com/layerborn/claude-code-handoff) by Layerborn, the [claude-handoff](https://github.com/davidteren/claude-handoff) by David Teren, [Shawn Presser's gist](https://gist.github.com/shawwn/56d9f2e3f8f662825c977e6e5d0bfc08), and a few more that showed up in [a Hacker News discussion](https://news.ycombinator.com/item?id=47581701).
+I looked at several existing handoff implementations before building mine. The [pi-handoff plugin](https://github.com/kartikkabadi/pi-handoff) by Kartik, [claude-handoff](https://github.com/REMvisual/claude-handoff) by REMvisual, and [Shawn Presser's gist](https://gist.github.com/shawwn/56d9f2e3f8f662825c977e6e5d0bfc08).
 
 The pattern I found across all of them: capture state to a markdown file on disk, then read it back when the next session starts.
 
@@ -232,12 +232,10 @@ If you try the handoff feature and find it captures too little or too much, I wo
     
 *   [obra/superpowers upstream](https://github.com/obra/superpowers) - the original project by Jesse Vincent
     
-*   [pi-handoff plugin](https://github.com/layerborn/claude-code-handoff) by Layerborn - one of the implementations I studied
+*   [pi-handoff plugin](https://github.com/kartikkabadi/pi-handoff) by Kartik - one of the implementations I studied
     
-*   [claude-handoff](https://github.com/davidteren/claude-handoff) by David Teren - another approach to the same problem
+*   [claude-handoff](https://github.com/REMvisual/claude-handoff) by REMvisual - another approach to the same problem
     
 *   [Shawn Presser's handoff gist](https://gist.github.com/shawwn/56d9f2e3f8f662825c977e6e5d0bfc08) - a minimal take on session continuity
-    
-*   [HN discussion on agent handoffs](https://news.ycombinator.com/item?id=47581701) - community thread where several approaches were compared
     
 *   [Claude Code hooks documentation](https://docs.anthropic.com/en/docs/claude-code/hooks) - official docs for PreCompact/PostCompact events
