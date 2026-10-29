@@ -1,0 +1,42 @@
+{%- comment -%}
+  Adds a copy button to every code block inside .prose. The button sits on the
+  wrapper, not the <pre>, so it stays put when long lines scroll sideways.
+  Styles live in _tailwind.css under .copy-code.
+{%- endcomment -%}
+<script>
+  (function () {
+    if (!navigator.clipboard) return;
+
+    var copyIcon = '<svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" /></svg>';
+    var doneIcon = '<svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>';
+
+    document.querySelectorAll(".prose pre").forEach(function (pre) {
+      // Rouge wraps <pre> in div.highlight; wrap bare blocks the same way.
+      var box = pre.parentElement;
+      if (!box.classList.contains("highlight")) {
+        box = document.createElement("div");
+        pre.parentNode.insertBefore(box, pre);
+        box.appendChild(pre);
+      }
+      box.classList.add("copy-code");
+
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "copy-code-btn";
+      btn.setAttribute("aria-label", "Copy code");
+      btn.innerHTML = copyIcon;
+      btn.addEventListener("click", function () {
+        var code = pre.querySelector("code") || pre;
+        navigator.clipboard.writeText(code.innerText.replace(/\n$/, "")).then(function () {
+          btn.innerHTML = doneIcon;
+          btn.setAttribute("aria-label", "Copied");
+          setTimeout(function () {
+            btn.innerHTML = copyIcon;
+            btn.setAttribute("aria-label", "Copy code");
+          }, 1500);
+        });
+      });
+      box.appendChild(btn);
+    });
+  })();
+</script>
