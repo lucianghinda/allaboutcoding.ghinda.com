@@ -9,7 +9,8 @@ Hashnode URLs.
 
 ## Local development
 
-Requires Ruby 3.4.7 (see `.ruby-version`).
+Requires the Ruby version pinned in `.ruby-version` (currently 4.0.9; `.tool-versions`
+and the deploy workflow track the same 4.0.x line).
 
 ```sh
 bundle install
@@ -35,6 +36,21 @@ minutes, including each deploy, so the slow part runs here instead and the
 result is committed. A post missing from the file simply renders no
 suggestions, so forgetting this step degrades quietly rather than breaking
 the build.
+
+To make it fast (seconds instead of minutes), enable the optional `:lsi`
+Gemfile group so classifier-reborn uses numo-linalg instead of the pure-Ruby
+SVD. numo-linalg needs OpenBLAS and LAPACKE installed before `bundle install`:
+
+```sh
+brew install openblas                              # macOS
+sudo apt-get install libopenblas-dev liblapacke-dev   # Debian/Ubuntu
+bundle config set --local with lsi
+bundle install
+```
+
+The group also lists `fiddle`, which numo-linalg loads at require time: Ruby 4.0
+moved it out of the default gems, so under Bundler it has to be declared in the
+Gemfile. See the comment above the group in `Gemfile` for the macOS build flags.
 
 ## Migration runbook (one-off)
 
