@@ -20,6 +20,7 @@ gem 'classifier-reborn', group: :development
 #                              --with-backend=openblas
 #   bundle install
 group :lsi, optional: true do
+  gem 'fiddle'                    # Ruby 4.0+: bundled gem, numo-linalg's loader needs it under Bundler
   gem 'numo-linalg'
   gem 'numo-narray'
 end
