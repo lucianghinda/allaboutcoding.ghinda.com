@@ -19,7 +19,12 @@ gem 'classifier-reborn', group: :development
 #   gem install numo-linalg -- --with-openblas-dir=$(brew --prefix openblas) \
 #                              --with-backend=openblas
 #   bundle install
+#
+# fiddle: numo-linalg requires it to load OpenBLAS. Ruby 4.0 moved it out of
+# the default gems, so under Bundler it must be listed here, or the require
+# fails and classifier-reborn silently falls back to pure Ruby.
 group :lsi, optional: true do
+  gem 'fiddle'
   gem 'numo-linalg'
   gem 'numo-narray'
 end
